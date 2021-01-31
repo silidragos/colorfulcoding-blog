@@ -1,0 +1,29 @@
+.subscribe_component__wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    color: #131210;
+    border: 1px solid #131210;
+    overflow: initial;
+    .subscribe_component__content {
+        width:80%;
+        margin: auto;
+        margin-top: -35px;
+        text-align: center;
+        h3 {
+            background-color: #131210;
+            color: white;
+            line-height: 2;
+        }
+        p{
+            margin-top: 55px;
+        }
+        input{
+            margin-top: 20px;
+        }
+        button{
+            margin-top: 30px;
+        }
+
+    }
+}

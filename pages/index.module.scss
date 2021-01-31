@@ -1,0 +1,120 @@
+.main_body {
+    width: 90%;
+    margin: auto;
+
+    aside {
+        margin-top: 155px;
+        float: right;
+        width: 300px;
+    }
+}
+
+.big_header__wrapper {
+    position: relative;
+    width: calc(100% + 70px);
+    height: 500px;
+    background-image: url("/images/bg_2.jpg");
+    margin-top: 60px;
+    margin-left: -50px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    z-index: -1;
+
+    
+    -webkit-box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+    -moz-box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+    box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+
+    .big_header {
+        padding: 2px 0px;
+        font-size: 1.5em;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .overlay {
+        height: 500px;
+        padding: 0px;
+        opacity: 0.4;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 110px;
+
+        .coding {
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+    h3 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .credits {
+        color: white;
+        font-size: 8px;
+        position: absolute;
+        right: 25px;
+        bottom: 0px;
+
+        a {
+            font-weight: bold;
+        }
+
+        z-index: 1;
+    }
+}
+
+.last_updates__wrapper {
+    margin-top: 75px;
+    display: inline-block;
+    width: calc(100% - 350px);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .big_header__wrapper h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 800px) {
+    .main_body {
+        width: 90%;
+    }
+    .big_header__wrapper {
+        width: 115%;
+        h1 {
+            font-size: 0.8em;
+        }
+
+        .big_header{
+            font-size: 1.25em;
+            width: calc(100% - 25px);
+        
+            margin-left: 25px;
+        }
+    }
+    .last_updates__wrapper {
+        width: 100%;
+    }
+}

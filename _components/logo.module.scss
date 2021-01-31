@@ -1,0 +1,30 @@
+.logo_wrapper {
+    display: inline-block;
+    .coding {
+        font-family: Computerfont;
+        color: white;
+        .underline {
+            animation: pulse 1s ease-in-out;
+            animation-iteration-count: infinite;
+            font-size: 0.7em;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .logo_wrapper{
+    }
+}

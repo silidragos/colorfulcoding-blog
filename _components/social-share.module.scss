@@ -1,0 +1,108 @@
+.social_component__wrapper {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    cursor: pointer;
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        li {
+            font-size: 2em;
+            transition: font-size .1s ease-out;
+            margin-left: 10px;
+
+            &.fb_share, &.twitter_share{
+                margin: 10px;
+            }
+            .fb_share_button{
+                color:white;
+                text-decoration: none;
+                background-color: #3b5998;
+                font-size: 12px;
+                padding: 8px 10px;
+                border-radius: 3px;
+
+                &:hover{
+                    background-color: #193c86;
+                }
+
+                svg{
+                    width: 7px;
+                    padding-right:10px;
+                }                
+            }
+            
+            &.twitter_share{
+                .twitter_share_button{
+                    position: relative;
+                    background-color: #1b95e0;
+                    color: white;
+                    height: 28px;
+                    border-radius: 4px;
+                    padding: 7px 8px;
+                    font-size: 12px;
+
+                    &:hover{
+                        background-color: rgb(17, 121, 185);
+                    }
+
+                    svg{
+                        padding-right: 10px;
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .social_component__wrapper {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        top: inherit;
+        ul {
+            width: 100%;
+            margin-bottom: 0px;
+            li {
+                width: 50%;
+                display: inline-block;
+                color: white;
+                text-align: center;
+                font-size: 1em;
+                margin-left:0px;
+                &.fb_share, &.twitter_share {
+                    height:35px;
+                    position: absolute;
+                    bottom:0px;
+                    margin: 0px;
+                }
+                &.twitter_share{
+                    .twitter_share_button{
+                        position:absolute;
+                        bottom: 0px;
+                        padding: 0px 0px;
+                        left: 65px;
+                    }
+                }
+
+                .fb_share_button{
+                    position: absolute;
+                    bottom: 5px;
+                    left: calc(25% + 20px);
+                }
+                &:nth-child(1) {
+                    background-color: #3b5998;
+                    left:0px;
+                    height: 39px;
+                }
+                &:nth-child(2) {
+                    right:0px;
+                    background-color: #1b95e0;
+                    padding-top:4px;
+                }
+            }
+        }
+    }
+}

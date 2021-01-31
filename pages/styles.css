@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+    font-family: Chewy;
+    src: url('../assets/fonts/Chewy.ttf');
+}
+
+@font-face {
+    font-family: Computerfont;
+    src: url('../assets/fonts/Computerfont.ttf');
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('/images/icon/bg-pattern.png');
+    margin: 0;
+    padding: 0;
+}
+
+body, h1,h2,h3{
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+input{
+    line-height: 2;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #131210;
+    text-align: center;
+    font-size: 1em;
+
+    font-family: 'Montserrat,sans-serif';
+}
+
+input:focus{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+input::placeholder{
+    transition: color .2s ease-in-out;
+}
+input:hover, input:focus{
+    border-bottom: 1px solid #FFB20F;
+}
+
+input:hover::placeholder
+{
+    color: darkgray;
+}
+
+button.submit-but{
+    background-color: #131210;
+    color: white;
+    font-size: 1em;
+    padding: 13px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+
+    transition: background-color .3s ease-in;
+}
+
+button:hover{
+    background-color: #FFB20F;
+}
+
+button:focus{
+    outline: none;
+}
+
+button.disabled{
+    background-color: gray;
+    cursor: default;
+}
+
+button.disabled.hover{
+    background-color: gray;
+}
+
+.colorful {
+    font-family: Chewy;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d32a81+0,d32a81+49,ecef32+100 */
+    background: #FFB20F;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ff5f43 0%, #ffb300 49%, #ffeb00 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff5f43 0%, #ffb300 49%, #ffeb00 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff5f43 0%, #ffb300 49%, #ffeb00 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32a81', endColorstr='#ecef32', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overlay {
+    width: 100%;
+    background-color: #131210;
+    opacity: .4;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.wrapper{
+    width: 60%;
+    margin-bottom: 75px;
+}
+
+.card{
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    -webkit-box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+    -moz-box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+    box-shadow: 3px -1px 15px -4px rgba(0,0,0,0.51);
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .wrapper{
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper{
+        width: 90%;
+    }
+}
