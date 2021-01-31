@@ -1,4 +1,5 @@
 import DefaultLayout from '@layouts/default';
+import { getConfig, getAllPosts } from '@api';
 
 import styles from './about-me.module.scss';
 
@@ -224,4 +225,14 @@ export default function AboutMe(props) {
             </div>
         </DefaultLayout>
     );
+}
+
+export async function getStaticProps() {
+    const config = await getConfig();
+    return {
+        props: {
+            title: "About",
+            description: config.description
+        }
+    }
 }
