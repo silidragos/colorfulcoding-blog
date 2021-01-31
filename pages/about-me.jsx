@@ -16,7 +16,7 @@ export default function AboutMe(props) {
                         </h1>
                 <div className={styles.bio}>
                     <ul>
-                        <li><b>Creative Dev</b> doing Freelance work, mostly by building AR/VR and 3D experiences. My weapons of choice are <b>Unity</b> and <b>AFrame+ThreeJS</b>. Also familiar with React, Java Spring, a bit of Cloud.</li>
+                        <li>Developer doing Freelance work, mostly by building AR/VR and 3D experiences. My weapons of choice are <b>Unity</b> and <b>AFrame+ThreeJS</b>. Also familiar with React, Java Spring, a bit of Cloud.</li>
                         <li>Cofounder of <a href="#artlink">ArtLink</a> and <a href="#vrmeetups">VRMeetups</a></li>
                         <li>Having the awesome chance of being a laboratory teacher for <a href="https://profs.info.uaic.ro/~adiftene/Scoala/2021/IMR/" target="_blank">Introduction to Mixed Reality</a> at UAIC's Computer Science Faculty in Iași</li>
                         <li>Occasionally creating content here, on the blog, and on my <a href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg" target="_blank">Youtube Channel</a></li>
