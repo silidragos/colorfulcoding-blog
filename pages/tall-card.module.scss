@@ -1,7 +1,11 @@
 .tall_card__wrapper {
     margin-bottom: 40px;
-    width: 100%;
-    max-width: 1000px;
+    width: 25%;
+    min-width: 350px;
+    height: 725px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
     .tall_card__category {
         background-color: #ffb20f;
         padding-left: 20px;
@@ -21,9 +25,9 @@
         cursor: pointer;
         &:hover {
             .overlay {
-                background-color: rgba(255,178,15, 0.829);
+                background-color: rgba(255, 178, 15, 0.829);
 
-                img{
+                img {
                     opacity: 1;
                 }
             }
@@ -37,11 +41,11 @@
             position: absolute;
             top: 0;
 
-            img{
+            img {
                 opacity: 1;
                 text-align: center;
                 position: absolute;
-                width:25%;
+                width: 25%;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -101,12 +105,16 @@
 
 /** MOBILE **/
 @media (max-width: 800px) {
-    .tall_card__title {
-        text-align: center;
-        h2 {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 10px;
+    .tall_card__wrapper {
+        width: 100%;
+        min-width: none;
+        .tall_card__title {
+            text-align: center;
+            h2 {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 10px;
+            }
         }
     }
 }

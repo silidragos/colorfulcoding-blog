@@ -16,7 +16,8 @@ export default function AboutMe(props) {
                         </h1>
                 <div className={styles.bio}>
                     <ul>
-                        <li>Developer doing Freelance work, mostly by building AR/VR and 3D experiences. My weapons of choice are <b>Unity</b> and <b>AFrame+ThreeJS</b>. Also familiar with React, Java Spring, a bit of Cloud.</li>
+                        <li>Developer doing Freelance work, mostly by building AR/VR and 3D experiences. I love the mix of Artistic Creativity and Technical Challenges this area has to offer.
+                             My weapons of choice are <b>Unity</b> and <b>AFrame+ThreeJS</b>. Also familiar with Spark AR, React, Java Spring, a bit of Cloud.</li>
                         <li>Cofounder of <a href="#artlink">ArtLink</a> and <a href="#vrmeetups">VRMeetups</a></li>
                         <li>Having the awesome chance of being a laboratory teacher for <a href="https://profs.info.uaic.ro/~adiftene/Scoala/2021/IMR/" target="_blank">Introduction to Mixed Reality</a> at UAIC's Computer Science Faculty in Iași</li>
                         <li>Occasionally creating content here, on the blog, and on my <a href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg" target="_blank">Youtube Channel</a></li>
@@ -59,7 +60,7 @@ export default function AboutMe(props) {
                                     Multiplayer technology for VR, Desktop and Mobile that facilitates bringing people together through technology.
                                     <br /><br />
                                     {/* <a href="">Landing Page</a> */}
-                                    <a href="mailto:dragos@colorfulcoding.com">Contact me for more details</a>
+                                    <a href="mailto:dragos@colorfulcoding.com">Contact us for more details</a>
                                 </p>
                             </div>
                         </div>
@@ -92,13 +93,27 @@ export default function AboutMe(props) {
                             <img src="./images/projects/overlay.png"></img>
 
                             <div className={styles.description}>
+                                <h2>Spark AR Filters</h2>
+                                <p>All kinds of Instagram/Facebook face filters, mostly with promotional purpose.</p>
+                                <br /><br />
+                            </div>
+                        </div>
+                        <img className={styles.portofolio_scene} src="./images/projects/scene_spark.png"></img>
+                        <img className={styles.portofolio_character + " " + styles.square} src="./images/projects/character_spark.png"></img>
+                    </div>
+
+                    <div className={styles.portofolio_element}>
+                        <div className={styles.overlay}>
+                            <img src="./images/projects/overlay.png"></img>
+
+                            <div className={styles.description}>
                                 <h2>Braila Harbor 1920 VR (2020)</h2>
                                 <p>Technical Implementation, as part of Vreestory Team<br />
                                 Unity. Oculus Quest</p>
                                 <p>
                                     Historical recreation of Braila's Harbor, present in Braila's Museum.
                                     <br /><br />
-                                    <a href="" target="_blank">Vreestory Link</a>
+                                    <a href="https://www.muzeulbrailei.ro/evenimente/calatorie-3d-in-portul-brailei-de-la-inceputul-secolului-al-xx-lea-prin-intermediul-tehnologiei-digitale-transpusa-pe-suport-oculus-vr-la-sediul-muzeului-brailei-carol-i-sec-ia-istorie/" target="_blank">Related Link</a>
                                 </p>
                             </div>
                         </div>
@@ -191,7 +206,7 @@ export default function AboutMe(props) {
                                 <p>Technical Implementation<br />
                                 Unity. Vuforia.</p>
                                 <p>
-                                    Art Festival app, having the options of seeing AR art Galleries at the location by scanning markers and taking them at home by <br/>scanning beer bottles bought there.
+                                    Art Festival app, having the options of seeing AR art Galleries at the location by scanning markers and taking them at home by <br />scanning beer bottles bought there.
                                 <br /><br />
                                     <a href="" target="_blank">Festival Link</a>
                                 </p>
@@ -200,7 +215,7 @@ export default function AboutMe(props) {
                         <img className={styles.portofolio_scene} src="./images/projects/scene_artfactory.png"></img>
                         <img className={styles.portofolio_character + " " + styles.square} src="./images/projects/character_artfactory.png"></img>
                     </div>
-                    
+
                     <div className={styles.portofolio_element}>
                         <div className={styles.overlay}>
                             <img src="./images/projects/overlay.png"></img>
@@ -210,8 +225,8 @@ export default function AboutMe(props) {
                                 <p>Cofounder<br />
                                 Angular. Java Spring. Machine Learning.</p>
                                 <p>
-                                    Website that recommended outfits using machine learning algorithms, from most Romanian clothing shops. 
-                                    <br/>
+                                    Website that recommended outfits using machine learning algorithms, from most Romanian clothing shops.
+                                    <br />
                                     Won Innovation Labs 2017 Final Best Presentation Prize.
                                 <br /><br />
                                     <a href="" target="_blank">Demo Video</a>
