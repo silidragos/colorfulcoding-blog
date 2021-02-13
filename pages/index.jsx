@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getConfig, getAllPosts } from '@api';
 
 import Logo from '@components/logo';
+import AnimatedButton from '@components/animated-button';
 
 import styles from './index.module.scss';
 import tallCardStyle from './tall-card.module.scss';
@@ -36,6 +37,7 @@ export default function Blog(props) {
 
             <div className={styles.main_body}>
                 <div className={styles.last_updates__wrapper}>
+                    <AnimatedButton></AnimatedButton>
                     <h1>Blog</h1>
                     <div>
                         {props.posts.map((post) => { return GetCard(post); })}

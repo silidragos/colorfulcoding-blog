@@ -107,7 +107,9 @@
 @media (max-width: 800px) {
     .tall_card__wrapper {
         width: 100%;
-        min-width: none;
+        min-width: initial;
+        margin-left: 0;
+        margin-right: 0;
         .tall_card__title {
             text-align: center;
             h2 {
