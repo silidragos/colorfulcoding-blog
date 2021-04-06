@@ -1,6 +1,6 @@
 import DefaultLayout from '@layouts/default';
 import { getConfig, getAllPosts } from '@api';
-
+import Head from 'next/head';
 import styles from './about-me.module.scss';
 
 export default function AboutMe(props) {
