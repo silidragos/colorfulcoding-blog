@@ -6,14 +6,49 @@
         width: 150px;
         height: 150px;
         border-radius: 20px;
+        display: inline-block;
+        vertical-align: middle;
 
         img {
             width: 100%;
         }
     }
 
-    .bio{
-        max-width: 1000px;
+    .bio {
+        max-width: 800px;
+        width: 50%;
+        display: inline-block;
+        margin-left: 25px;
+        vertical-align: middle;
+
+        .bio_main {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .technologies{
+            text-align: center;
+            width: 100%;
+            color: gray;
+            font-weight: bolder;
+            margin-top:15px;
+        }
+    }
+
+    .extra_info{
+        margin-top:25px;
+    }
+
+    .social_media{
+        a{
+            width:40px;
+            display: inline-block;
+            margin: 10px;
+
+            img{
+                width: 100%;
+            }
+        }
     }
 
     hr {
@@ -31,7 +66,7 @@
         padding: 0; /* Remove padding */
         margin: 0; /* Remove margins */
 
-        li{
+        li {
             margin-bottom: 10px;
         }
     }
@@ -69,7 +104,7 @@
                     transition: opacity 0.3s ease-in-out;
                 }
 
-                .description{
+                .description {
                     position: absolute;
                     top: 55px;
                     /* bottom: 0; */
@@ -80,32 +115,33 @@
                     font-size: 1.5em;
                     text-align: left;
 
-                    opacity:0;
+                    opacity: 0;
                     transition: opacity 0.3s ease-in-out;
 
-                    width:66%;
+                    width: 66%;
 
-                    p, h2{
+                    p,
+                    h2 {
                         font-family: Chewy;
                     }
 
-                    h2{
+                    h2 {
                         font-size: 1em;
                     }
-                    p{
+                    p {
                         font-size: 0.6em;
                     }
-                    a{
+                    a {
                         color: black;
                     }
                 }
 
-                &:hover{
-                    img{
-                        opacity:0.75;
+                &:hover {
+                    img {
+                        opacity: 0.75;
                     }
 
-                    .description{
+                    .description {
                         opacity: 1;
                     }
                 }
@@ -120,7 +156,7 @@
                 bottom: -25px;
                 height: 80%;
 
-                &.square{
+                &.square {
                     height: 50%;
                 }
             }
@@ -128,27 +164,26 @@
     }
 }
 
-
 @media (max-width: 800px) {
     .about_me__wrapper {
-        .bio{
+        .bio {
             width: 80%;
             margin: auto;
         }
         .portofolio_wrapper {
-            .portofolio_element{
+            .portofolio_element {
                 width: 100%;
                 margin-left: -25px;
 
-                .overlay{
-                    .description{
+                .overlay {
+                    .description {
                         left: 70px;
                         top: 35px;
 
-                        h2{
-                            font-size:0.7em;
+                        h2 {
+                            font-size: 0.7em;
                         }
-                        p{
+                        p {
                             font-size: 0.4em;
                         }
                     }

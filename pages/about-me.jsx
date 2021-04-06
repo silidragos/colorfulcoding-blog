@@ -6,31 +6,34 @@ import styles from './about-me.module.scss';
 export default function AboutMe(props) {
     return (
         <DefaultLayout title={props.title} description={props.description}>
+            <Head>
+                <meta property="og:title" content={"About me | Colorful Coding"} />
+                <meta property="og:description" content={"Bio & Portofolio"} />
+                <meta property="og:image" content={"/images/6/scene_vrme.png.png"} />
+            </Head>
 
             <div className={styles.about_me__wrapper}>
                 <div className={styles.avatar_image + " card"}>
                     <img src='/images/me.jpg'></img>
                 </div>
-                <h1>
-                    <span className="colorful">About</span> me
-                        </h1>
                 <div className={styles.bio}>
-                    <ul>
-                        <li>Developer doing Freelance work, mostly by building AR/VR and 3D experiences. I love the mix of Artistic Creativity and Technical Challenges this area has to offer.
-                             My weapons of choice are <b>Unity</b> and <b>AFrame+ThreeJS</b>. Also familiar with Spark AR, React, Java Spring, a bit of Cloud.</li>
-                        <li>Cofounder of <a href="#artlink">ArtLink</a> and <a href="#vrmeetups">VRMeetups</a></li>
-                        <li>Having the awesome chance of being a laboratory teacher for <a href="https://profs.info.uaic.ro/~adiftene/Scoala/2021/IMR/" target="_blank">Introduction to Mixed Reality</a> at UAIC's Computer Science Faculty in Iași</li>
-                        <li>Occasionally creating content here, on the blog, and on my <a href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg" target="_blank">Youtube Channel</a></li>
-                    </ul>
-                    <hr />
-                    <ul>
-                        <li>You can find more about me on <a href="https://www.linkedin.com/in/drago%C8%99-silion-a01160100/" target="_blank">LinkedIn</a> or by connecting on <a href="https://twitter.com/silidragos" target="_blank">Twitter</a></li>
-                        <li>You can also checkout my <a href="https://github.com/silidragos" target="_blank">Github</a></li>
-                        <li>Or email me on: <a href="mailto:dragos@colorfulcoding.com">dragos@colorfulcoding.com</a></li>
-                    </ul>
+                    <div>
+                        <div className={styles.bio_main}>
+                            Developer doing Freelance work, mostly by building AR/VR and 3D experiences. I love the mix of Artistic Creativity and Technical Challenges this area has to offer.
+                        </div>
+                        <div className={styles.technologies}>Unity, AFrame, ThreeJS, SparkAR, React, Blender</div>
+                    </div>
                 </div>
-                <h1>
-                    <span className="colorful">Past and Current</span>  Works</h1>
+                <div className={styles.extra_info}>
+                    Ask me about <a href="#artlink">ArtLink</a>, <a href="#vrmeetups">VRMeetups</a>,  <a href="https://profs.info.uaic.ro/~adiftene/Scoala/2021/IMR/" target="_blank">AR/VR Education</a> or <a href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg" target="_blank">Youtube</a>!
+                </div>
+                <div className={styles.social_media}>
+                    <a href="https://www.linkedin.com/in/drago%C8%99-silion-a01160100/" target="_blank"><img src="./icons/linkedin.png"></img></a>
+                    <a href="https://twitter.com/silidragos" target="_blank"><img src="./icons/twitter.png"></img></a>
+                    <a href="https://github.com/silidragos" target="_blank"><img src="./icons/github.png"></img></a>
+                    <a href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg" target="_blank"><img src="./icons/youtube.png"></img></a>
+                    <a href="mailto:dragos@colorfulcoding.com" target="_blank"><img src="./icons/email.png"></img></a>
+                </div>
 
                 <div className={styles.portofolio_wrapper}>
                     <div className={styles.portofolio_element} id="artlink">
@@ -238,7 +241,7 @@ export default function AboutMe(props) {
                     </div>
                 </div>
             </div>
-        </DefaultLayout>
+        </DefaultLayout >
     );
 }
 
