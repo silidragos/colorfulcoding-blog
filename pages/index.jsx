@@ -17,7 +17,6 @@ export default function Blog(props) {
                         <div className={styles.logo}><Logo /></div>
                     </h1>
                     <h3> A warm place with Augmented and Virtual Realty, Web, Servers and general opinions </h3>
-                    <p className={styles.credits}>Photo by Billetto Editorial on <a href="https://unsplash.com">Unsplash</a></p>
                 </div>
                 <div className={styles.overlay + " overlay"}></div>
             </div>
