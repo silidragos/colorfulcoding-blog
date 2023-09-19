@@ -172,8 +172,8 @@ h2 {
     aspect-ratio: 9/16;
 }
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
     .awssld__controls {
         visibility: initial !important;
     }
-}
+} */
