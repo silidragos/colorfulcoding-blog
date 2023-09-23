@@ -32,27 +32,27 @@ const HomePage = () => {
         <h1 className='font-bold stroke-text text-zinc-900' style={{ fontSize: "3em" }}>Services</h1>
       </StrokeTitle>
 
-      <Service imgSrc="./icons/product_marketing.svg" imgAlt="Product Marketing" content="Is the use of three-dimensional models, visualizations, and simulations to promote and showcase products in a more engaging and immersive way.">
+      <Service imgSrc="./icons/product_marketing.svg" imgAlt="Product Marketing" content="We bring products to life with interactive, immersive visuals. Beyond just showcasing a product, this approach allows consumers to explore details intimately, enhancing storytelling and forging a deeper connection between brand and audience.">
         <h1><span className='text-orange-500'>3D</span> <br />Product Marketing</h1>
       </Service>
 
-      <Service imgSrc="./icons/educational_tools.svg" imgAlt="Educational Tools" content="Refer to interactive technologies such as AR and VR that create engaging and immersive learning experiences, enabling users to explore and interact with virtual environments for educational purposes.">
+      <Service imgSrc="./icons/educational_tools.svg" imgAlt="Educational Tools" content="Our goal is to elevate learning by plunging students into interactive experiences. Beyond traditional methods, we want to help enhance comprehension, foster engagement, and make complex concepts accessible and memorable.">
         <h1>Immersive <br /><span className='text-orange-500'>Educational Tools</span></h1>
       </Service>
 
-      <Service imgSrc="./icons/digital_heritage.svg" imgAlt="Digital Heritage" content="Refers to the digitization and preservation of cultural artifacts, historical sites, and objects in three-dimensional models, allowing for immersive exploration, documentation, and study of our rich heritage using digital technology.">
+      <Service imgSrc="./icons/digital_heritage.svg" imgAlt="Digital Heritage" content="3D digital heritage captures the past in vivid detail, preserving historical treasures in interactive formats. Beyond mere archiving, it breathes life into ancient relics and stories, offering a tangible connection to our shared history.">
         <h1><span className='text-orange-500'>3D</span> <br /> Digital Heritage</h1>
       </Service>
 
-      <Service imgSrc="./icons/digital_twin.svg" imgAlt="Digital Twins" content="Involve the use of extended reality (XR), which encompasses VR, AR, and MR, to create virtual replicas or representations of physical objects, environments, or systems for simulation, analysis, and collaborative purposes.">
+      <Service imgSrc="./icons/digital_twin.svg" imgAlt="Digital Twins" content="Digital Twins blend the real and virtual, creating dynamic replicas of physical entities. More than just simulations, they offer real-time insights, enhance operational efficiency, and provide a bridge between digital and tangible realms.">
         <h1>XR <span className='text-orange-500'>Digital Twin</span> <br /> Technologies</h1>
       </Service>
 
-      <Service imgSrc="./icons/artistic.svg" imgAlt="Artistic Experiences" content="Encompass the integration of MR technology, combining virtual and real-world elements, to create immersive and interactive artistic encounters that blur the boundaries between physical and digital art forms.">
+      <Service imgSrc="./icons/artistic.svg" imgAlt="Artistic Experiences" content="We thrive to transcend traditional boundaries, merging art with immersive technology. Beyond just viewing, we invite audiences to engage, interact, and become part of the evolving narrative, offering a deeper connection to the artistic intent.">
         <h1>XR <span className='text-orange-500'>Artistic <br /> Experiences</span></h1>
       </Service>
 
-      <Service imgSrc="./icons/vr_world.svg" imgAlt="World Building" content="Involves the collaborative creation and design of VR environments where users can interact, communicate, and engage with each other, fostering social connections and shared experiences within the virtual world.">
+      <Service imgSrc="./icons/vr_world.svg" imgAlt="World Building" content="Crafting interactive universes where users connect and collaborate. Beyond just digital realms, these environments foster community, enable shared experiences, and reshape the way we perceive virtual social interaction.">
         <h1>Social <span className='text-orange-500'>VR World<br /> Building</span></h1>
       </Service>
     </section>
@@ -67,14 +67,17 @@ const HomePage = () => {
     </section>
 
 
-    <section className='my-20'>
+    <section id="articles"  className='my-20'>
       <StrokeTitle>
         <h1><span className='text-zinc-900 stroke-text'>Writings</span> & <span className="text-orange-500">talks</span></h1>
       </StrokeTitle>
     </section>
 
-    <section id="articles">
-      <div className='grid grid-cols-2 gap-4'>
+    <section style={{height: "250px"}}>
+      <div className='text-center pt-12'>
+        Coming soon...
+      </div>
+      {/* <div className='grid grid-cols-2 gap-4'>
         {talksMetadata.map((talk) => {
           return <div className='writing-element rounded-lg overflow-hidden relative bg-cover aspect-square' style={{ backgroundImage: `url(${talk.cover})` }}>
             <div className='info absolute bg-orange-800 bottom-0 p-2 w-full'>
@@ -86,7 +89,7 @@ const HomePage = () => {
             </div>
           </div>;
         })}
-      </div>
+      </div> */}
     </section>
     <Contact></Contact>
 

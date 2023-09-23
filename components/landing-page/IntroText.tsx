@@ -31,10 +31,10 @@ const IntroText = () => {
                     <span className="accent">ColorfulCoding</span> is a full-service XR creative studio inspired by the potential of emerging technologies.
                 </h2>
                 <p className='py-10'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ipsum nisl. Sed volutpat purus ut velit pellentesque, commodo tincidunt dui cursus. Donec imperdiet urna est, vitae dapibus leo mattis nec. Ut augue purus, maximus ultrices lacinia non, venenatis blandit tellus.
+                At ColorfulCoding, we believe in the power of interactive storytelling to shape the future of digital experiences. Our studio specializes in creating finely-tuned XR solutions tailored for diverse audiences, from the realms of advertising, artistic expression, digital heritage, tourism to various other more applied industries.
                 </p>
-                <p className='pb-10'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ipsum nisl. Sed volutpat purus ut velit pellentesque, commodo tincidunt dui cursus.
+                <p>
+                With a team that balances design, 3D artistry, and development expertise, we focus on building genuine connections, fostering engagement, and delivering meaningful narratives. 
                 </p>
             </motion.div>
         </div>

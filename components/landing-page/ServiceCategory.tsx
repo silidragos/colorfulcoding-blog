@@ -32,7 +32,7 @@ const Service = (props: { children: ReactNode, imgSrc: string, imgAlt: string, c
                 <div className='my-20 text-center py-10'>
                     {props.children}
                     <Image className='m-auto my-10 w-2/5' src={props.imgSrc} alt={props.imgAlt} width={0} height={0} />
-                    <p>{props.content}</p>
+                    <p className="px-5">{props.content}</p>
                 </div>
 
             </motion.div>

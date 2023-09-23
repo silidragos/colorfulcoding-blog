@@ -32,7 +32,7 @@ const TopNav = () => {
 
                 </div>
 
-                <div className='absolute center w-full text-4xl underline' style={{ bottom: "150px" }}><a href="#About" onClick={() => setIsBurgerMenuOpen(false)}>Contact Us</a></div>
+                <div className='absolute center w-full text-4xl underline' style={{ bottom: "150px" }}><a href="#contact" onClick={() => setIsBurgerMenuOpen(false)}>Contact Us</a></div>
             </div>
         </div>
         }
