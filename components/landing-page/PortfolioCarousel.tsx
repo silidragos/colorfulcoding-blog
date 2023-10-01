@@ -12,7 +12,7 @@ const PortfolioCarousel = () => {
                 setCurrentIdx(e.currentIndex);
             }}>
                 <div className="slider__video-card">
-                    {currentIdx === 0 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 0 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/artlink_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-slate-950/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">ArtLink</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">The artworld at your fingertips</h2>
@@ -21,7 +21,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    {currentIdx === 1 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 1 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/oradea_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-lime-700/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Immersive Oradea</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">AR Geolocated Touristic Experience</h2>
@@ -31,7 +31,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    {currentIdx === 2 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 2 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/psychehouse_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-purple-900/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">PsycheHouse 60s</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">Experience a massive cultural "Youthquake!"</h2>
@@ -41,7 +41,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    {currentIdx === 3 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 3 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/copil_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-blue-400/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Copil Creativ</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">AR Children's Book</h2>
@@ -51,7 +51,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    {currentIdx === 4 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 4 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/wamdah_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-amber-800/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Wamdah VR</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">A journey to the future</h2>
@@ -61,7 +61,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    {currentIdx === 5 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 5 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/oca_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-fuchsia-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">OCA Walkathon VR</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">Together we win</h2>
@@ -70,7 +70,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    {currentIdx === 6 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 6 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/fire_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-blue-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Fire Simulator</h1>
                         <h2 className="text-center w-11/12 m-auto font-normal">VR Training Simulator</h2>
@@ -79,7 +79,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    {currentIdx === 7 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/reel.mp4" autoPlay muted loop></video>}
+                    {currentIdx === 7 && <video className="w-full" style={{ maxWidth: "100%" }} src="./video/marketing_mobile.webm" autoPlay muted loop></video>}
                     <div className="absolute bottom-0 py-5 bg-red-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">XR Marketing</h1>
                         {/* <h2 className="text-center w-11/12 m-auto font-normal">...</h2> */}

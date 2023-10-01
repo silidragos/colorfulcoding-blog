@@ -21,7 +21,7 @@ const HomePage = () => {
     {/* VIDEO REEL*/}
     <section id="home" className='mb-20'>
       {/* Full height video that autoplays on mute loop */}
-      <video className="w-full" style={{maxWidth: "100%"}} src="./video/reel.mp4" autoPlay muted loop></video>
+      <video className="w-full" style={{maxWidth: "100%"}} src="./video/reel.webm" autoPlay muted loop></video>
       <IntroText></IntroText>
       <IntroLogo></IntroLogo>
     </section>
