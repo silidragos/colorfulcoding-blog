@@ -25,7 +25,7 @@ const IntroLogo = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ type: "spring", duration: 0.8, bounce: .5, delay: .25 }}>
-                <Image className='m-auto w-4/5 py-10' src="./icons/icon_short_large.svg" alt="Image 1" width={0} height={0} />
+                <Image className='m-auto w-4/5' src="./icons/icon_short_large.svg" alt="Image 1" width={0} height={0} />
             </motion.div>
 
             <motion.div variants={{

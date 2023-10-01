@@ -33,7 +33,7 @@ const Contact = () => {
 
                     <br />
                     <div className='underline text-center text-lg text-white'>
-                        <a href="">dragos@colorfulcoding.com</a>
+                        <a href="mailto:dragos@colorfulcoding.com">dragos@colorfulcoding.com</a>
                     </div>
 
                     <div className="grid grid-cols-3 gap-4 w-3/5 m-auto my-8" style={{ height: "50px" }}>
@@ -43,7 +43,7 @@ const Contact = () => {
                         <div><a className='w-full' target="_blank" href="https://www.tiktok.com/@colorfulcoding"><Image className='w-full' src="./icons/tiktok.svg" alt="Tiktok" width={0} height={0} /></a></div>
                     </div>
 
-                    <p className='text-center text-white'>Made with ♥ in Iași</p>
+                    <p className='text-center text-white pt-5'>Made with ♥ in Iași</p>
 
                 </section>
             </motion.div>

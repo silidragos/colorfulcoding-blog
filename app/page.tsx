@@ -15,7 +15,7 @@ import PortfolioCarousel from '@/components/landing-page/PortfolioCarousel';
 const HomePage = () => {
   const talksMetadata = getWritingsMetadata();
 
-  return <div className='bg-zinc-900 px-2' style={{ overflow: "hidden", maxWidth: "100%" }}>
+  return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
     <TopNav></TopNav>
 
     {/* VIDEO REEL*/}
@@ -75,7 +75,14 @@ const HomePage = () => {
 
     <section style={{height: "250px"}}>
       <div className='text-center pt-12'>
-        Coming soon...
+        <div className='wavy-text'>
+          <span style={{"--i": 1} as React.CSSProperties}>W</span>
+          <span style={{"--i": 2} as React.CSSProperties}>I</span>
+          <span style={{"--i": 3} as React.CSSProperties}>P</span>
+          <span style={{"--i": 4} as React.CSSProperties}>.</span>
+          <span style={{"--i": 5} as React.CSSProperties}>.</span>
+          <span style={{"--i": 6} as React.CSSProperties}>.</span>
+        </div>
       </div>
       {/* <div className='grid grid-cols-2 gap-4'>
         {talksMetadata.map((talk) => {

@@ -161,6 +161,10 @@ h2 {
     border-radius: 20px;
 }
 
+.awssld__bullets {
+    bottom: -55px !important;
+}
+
 .slider__video-card {
     width: 100%;
     aspect-ratio: 9/16;
@@ -177,3 +181,18 @@ h2 {
         visibility: initial !important;
     }
 } */
+
+.wavy-text span{
+    animation: wavy 3s infinite;
+    animation-delay: calc(.2s * var(--i));
+    display: inline-block;
+}
+
+@keyframes wavy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-10px)
+  }
+}
