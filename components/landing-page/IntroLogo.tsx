@@ -56,7 +56,7 @@ const IntroLogo = () => {
                 transition={{ type: "spring", duration: 0.8, bounce: .5, delay: 1 }}>
                 <div className='text-zinc-900 bg-orange-500 font-bold text-lg py-2 burtiera_wrapper_two'>
                     <div className='burtiera burtiera-1'>
-                        <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
+                        <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
                     </div>
                     <div className='burtiera burtiera-2'>
                         <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>

@@ -62,20 +62,24 @@ h2 {
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
+
+    width: 120%;
 }
 
 .burtiera span {
     display: inline-block;
     animation: burtiera 20s infinite linear;
-    padding-left: 100%;
+    -webkit-animation: burtiera 20s infinite linear;
 }
 
 .burtiera.burtiera-1 span {
     animation-delay: -10s;
+    -webkit-animation-delay: -10s;
 }
 
 .burtiera.burtiera-2 span {
     animation-delay: 0s;
+    -webkit-animation-delay: 0s;
 }
 
 
@@ -86,7 +90,7 @@ h2 {
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 }
 
