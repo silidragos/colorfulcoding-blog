@@ -25,7 +25,7 @@ const TopNav = () => {
 
                     <div className='my-10'><a href="#home" onClick={() => setIsBurgerMenuOpen(false)}>About</a></div>
                     <div className='my-10'><a href="#services" onClick={() => setIsBurgerMenuOpen(false)}>Services</a></div>
-                    <div className='my-10'><a href="#articles" onClick={() => setIsBurgerMenuOpen(false)}>Articles</a></div>
+                    <div className='my-10'><a href="#projects" onClick={() => setIsBurgerMenuOpen(false)}>Past Projects</a></div>
 
                     <div className="bg-white" style={{ width: "150px", height: "10px", left: "-200px", bottom: "-50px", position: "absolute" }}></div>
                     <div className="bg-white" style={{ width: "400px", height: "10px", right: "-200px", bottom: "-150px", position: "absolute" }}></div>

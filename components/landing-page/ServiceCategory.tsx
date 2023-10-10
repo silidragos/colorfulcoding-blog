@@ -1,10 +1,11 @@
 "use client"
 import { motion, useAnimation, useInView } from "framer-motion";
-import { Children, ReactNode, useEffect, useRef } from "react";
+import { Children, ReactNode, useEffect, useRef, useState } from "react";
 import Image from 'next/image';
 
 const Service = (props: { children: ReactNode, imgSrc: string, imgAlt: string, content: string }) => {
     const ref = useRef(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
     const isInView = useInView(ref, { once: false });
     const mainControls = useAnimation();
@@ -16,6 +17,20 @@ const Service = (props: { children: ReactNode, imgSrc: string, imgAlt: string, c
             mainControls.start('hidden');
         }
     }, [isInView])
+
+    
+
+    function handleWindowSizeChange() {
+        setIsMobile(window.innerWidth < 768);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+
     return (
         <div ref={ref}>
             <motion.div
@@ -29,10 +44,13 @@ const Service = (props: { children: ReactNode, imgSrc: string, imgAlt: string, c
                 transition={{ type: "spring", duration: 4.0, delay: 0 }}
             >
 
-                <div className='my-20 text-center py-10'>
-                    {props.children}
-                    <Image className='m-auto my-10 w-2/5' src={props.imgSrc} alt={props.imgAlt} width={0} height={0} />
-                    <p className="px-5">{props.content}</p>
+                <div className='my-20 text-center py-10 flex flex-wrap items-center justify-items-center'>
+                    {isMobile && props.children}
+                    <Image className='m-auto my-10 md:my-0 w-2/5 md:w-1/5' src={props.imgSrc} alt={props.imgAlt} width={0} height={0} />
+                    <div className="w-full md:w-1/2">
+                    {!isMobile && props.children}
+                    <p className="px-5 w-full md:w-4/5 m-auto">{props.content}</p>
+                    </div>
                 </div>
 
             </motion.div>
