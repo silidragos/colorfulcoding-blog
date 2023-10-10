@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 const MainReel = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 768);
 
     function handleWindowSizeChange() {
         if(typeof window === 'undefined') return;
