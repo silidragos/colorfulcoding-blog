@@ -10,6 +10,8 @@ const MainReel = () => {
         setIsMobile(window.innerWidth < 768);
     }
     useEffect(() => {
+        if(typeof window === 'undefined') return;
+
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);

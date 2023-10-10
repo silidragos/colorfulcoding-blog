@@ -5,7 +5,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 
 const MainReel = () => {
     const ref = useRef(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 768);
 
     const isInView = useInView(ref, { once: false });
     const mainControls = useAnimation();
@@ -20,10 +20,14 @@ const MainReel = () => {
 
 
     function handleWindowSizeChange() {
+        if(typeof window === 'undefined') return;
+
         setIsMobile(window.innerWidth < 768);
     }
 
     useEffect(() => {
+        if(typeof window === 'undefined') return;
+        
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
