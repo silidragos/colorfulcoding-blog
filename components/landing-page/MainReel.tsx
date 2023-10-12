@@ -20,7 +20,7 @@ const MainReel = () => {
 
     return (
         <div>
-            <video className="w-full" style={{ maxWidth: "100%" }} src={isMobile ? "./video/reel.webm" : "./video/Raindrops_Videvo.mp4"} autoPlay muted loop></video>
+            <video className="w-full" style={{ maxWidth: "100%" }} src={isMobile ? "./video/reel.webm" : "./video/reel_wide.webm"} autoPlay muted loop></video>
         </div>
     )
 }

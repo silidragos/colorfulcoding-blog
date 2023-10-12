@@ -265,6 +265,16 @@ h2 {
         width: 50px;
         margin: auto;
     }
+
+    .awssld__controls button .awssld__controls__arrow-left, .awssld__controls button .awssld__controls__arrow-right{
+        opacity: 1 !important;
+    }
+    .awssld__controls button .awssld__controls__arrow-left::before, .awssld__controls button .awssld__controls__arrow-left::after,
+    .awssld__controls button .awssld__controls__arrow-right::before, .awssld__controls button .awssld__controls__arrow-right::after{
+        background-color: white !important;
+        box-shadow: 2px 2px 5px black;
+    }
+    
 }
 
 .activeOnMobile {
