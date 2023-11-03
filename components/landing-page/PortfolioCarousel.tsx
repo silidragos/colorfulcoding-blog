@@ -13,9 +13,7 @@ const PortfolioCarousel = () => {
                 setCurrentIdx(e.currentIndex);
             }}>
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/artlink_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/artlink_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop src={"./video/artlink_mobile.mp4"}>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-slate-950/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">ArtLink</h1>
@@ -25,9 +23,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/oradea_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/oradea_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/oradea_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-lime-700/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Immersive Oradea</h1>
@@ -38,9 +34,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/psychehouse_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/psychehouse_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/psychehouse_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-purple-900/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">PsycheHouse 60s</h1>
@@ -51,9 +45,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/copil_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/copil_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop src={"./video/copil_mobile.mp4"}>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-blue-400/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Copil Creativ</h1>
@@ -64,9 +56,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} src="./video/wamdah_mobile.webm" autoPlay muted loop>
-                        <source src={"./video/wamdah_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/wamdah_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/wamdah_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-amber-800/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Wamdah VR</h1>
@@ -77,9 +67,7 @@ const PortfolioCarousel = () => {
                 </div>
 
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/oca_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/oca_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/oca_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-fuchsia-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">OCA Walkathon VR</h1>
@@ -89,9 +77,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/fire_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/fire_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/fire_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-blue-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">Fire Simulator</h1>
@@ -101,9 +87,7 @@ const PortfolioCarousel = () => {
                     </div>
                 </div>
                 <div className="slider__video-card">
-                    <video playsInline className="w-full" style={{ maxWidth: "100%" }} autoPlay muted loop>
-                        <source src={"./video/marketing_mobile.webm"} type={"video/webm"} />
-                        <source src={"./video/marketing_mobile.mp4"} type={"video/mp4"} />
+                    <video className="w-full" style={{ maxWidth: "100%" }} src={"./video/marketing_mobile.mp4"} autoPlay muted loop>
                     </video>
                     <div className="absolute bottom-0 py-5 bg-red-500/80 w-full">
                         <h1 className="text-center w-11/12 m-auto">XR in Advertising & Marketing</h1>
