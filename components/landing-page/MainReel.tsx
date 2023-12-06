@@ -21,8 +21,7 @@ const MainReel = () => {
     return (
         <div>
             <video className="w-full"style={{ maxWidth: "100%" }} autoPlay muted loop playsInline>
-                <source src={isMobile ? "./video/reel.webm" : "./video/reel_wide.webm"} type="video/webm" />
-                <source src={isMobile ? "./video/reel.mp4" : "./video/reel_wide.mp4"} type="video/mp4" />
+                <source src={isMobile ? "./video/reel_compressed.mp4" : "./video/reel_wide_compressed.mp4"} type="video/mp4" />
             </video>
         </div>
     )
