@@ -73,16 +73,16 @@ const MainReel = () => {
                 <div className='text-zinc-900 bg-orange-500 font-bold text-lg py-2 burtiera_wrapper_two'>
                     <div className='burtiera burtiera-1'>
                         {isMobile ?
-                            <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
+                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
                             :
-                            <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
+                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
                         } 
                     </div>
                     <div className='burtiera burtiera-2'>
                         {isMobile ?
-                            <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
+                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
                             :
-                            <span>HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
+                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
                         } 
                     </div>
                 </div>

@@ -12,6 +12,7 @@ import Contact from '@/components/landing-page/Contact';
 import PortfolioCarousel from '@/components/landing-page/PortfolioCarousel';
 import MainReel from '@/components/landing-page/MainReel';
 import Burtiera from '@/components/landing-page/Burtiera';
+import ServicesCards from '@/components/landing-page/ServicesCards';
 
 
 const HomePage = () => {
@@ -48,36 +49,38 @@ const HomePage = () => {
       </StrokeTitle>
 
       <Service imgSrc="./icons/product_marketing.svg" imgAlt="Product Marketing" content="We bring products to life with interactive, immersive visuals. Beyond just showcasing a product, this approach allows consumers to explore details intimately, enhancing storytelling and forging a deeper connection between brand and audience.">
-        <h1  className='w-full'><span className='text-orange-500'>3D</span> <br />Product Marketing</h1>
+        <h1 className='w-full'><span className='text-orange-500'>3D</span> <br />Product Marketing</h1>
       </Service>
 
       <Service imgSrc="./icons/educational_tools.svg" imgAlt="Educational Tools" content="Our goal is to elevate learning by plunging students into interactive experiences. Beyond traditional methods, we want to help enhance comprehension, foster engagement, and make complex concepts accessible and memorable.">
-        <h1  className='w-full'>Immersive <br /><span className='text-orange-500'>Educational Tools</span></h1>
+        <h1 className='w-full'>Immersive <br /><span className='text-orange-500'>Educational Tools</span></h1>
       </Service>
 
       <Service imgSrc="./icons/digital_heritage.svg" imgAlt="Digital Heritage" content="3D digital heritage captures the past in vivid detail, preserving historical treasures in interactive formats. Beyond mere archiving, it breathes life into ancient relics and stories, offering a tangible connection to our shared history.">
-        <h1  className='w-full'><span className='text-orange-500'>3D</span> <br /> Digital Heritage</h1>
+        <h1 className='w-full'><span className='text-orange-500'>3D</span> <br /> Digital Heritage</h1>
       </Service>
 
       <Service imgSrc="./icons/digital_twin.svg" imgAlt="Digital Twins" content="Digital Twins blend the real and virtual, creating dynamic replicas of physical entities. More than just simulations, they offer real-time insights, enhance operational efficiency, and provide a bridge between digital and tangible realms.">
-        <h1  className='w-full'>XR <span className='text-orange-500'>Digital Twin</span> <br /> Technologies</h1>
+        <h1 className='w-full'>XR <span className='text-orange-500'>Digital Twin</span> <br /> Technologies</h1>
       </Service>
 
       <Service imgSrc="./icons/artistic.svg" imgAlt="Artistic Experiences" content="We thrive to transcend traditional boundaries, merging art with immersive technology. Beyond just viewing, we invite audiences to engage, interact, and become part of the evolving narrative, offering a deeper connection to the artistic intent.">
-        <h1  className='w-full'>XR <span className='text-orange-500'>Artistic <br /> Experiences</span></h1>
+        <h1 className='w-full'>XR <span className='text-orange-500'>Artistic <br /> Experiences</span></h1>
       </Service>
 
       <Service imgSrc="./icons/vr_world.svg" imgAlt="World Building" content="Crafting interactive universes where users connect and collaborate. Beyond just digital realms, these environments foster community, enable shared experiences, and reshape the way we perceive virtual social interaction.">
-        <h1  className='w-full'>Social <span className='text-orange-500'>VR World<br /> Building</span></h1>
+        <h1 className='w-full'>Social <span className='text-orange-500'>VR World<br /> Building</span></h1>
       </Service>
     </section>
 
     <section id="projects" className='my-40'>
       <StrokeTitle>
-        <h1><span className='text-orange-500'>Past</span> <br /> Projects</h1>
+        <h1><span className="text-orange-500">Projects</span></h1>
+        {/* <span className='text-zinc-900 stroke-text'>Services</span> &  */}
       </StrokeTitle>
 
-      <PortfolioCarousel></PortfolioCarousel>
+      {/* <PortfolioCarousel></PortfolioCarousel> */}
+      <ServicesCards></ServicesCards>
     </section>
 
 

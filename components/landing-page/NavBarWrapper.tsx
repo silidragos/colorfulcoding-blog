@@ -26,7 +26,7 @@ const NavBarWrapper = (props: { onClickBurgerMenu: any }) => {
             initial="transparent"
             animate={mainControls}
             transition={{ type: "tween", duration: 0.3, delay: 0 }}>
-            <a href="#home"><Image src="/icons/icon_small.svg" alt={'Logo'} width={50} height={50}></Image></a>
+            <a href="/#home"><Image src="/icons/icon_small.svg" alt={'Logo'} width={50} height={50}></Image></a>
             <button onClick={() => { props.onClickBurgerMenu() }} className='px-5'><Image src="/icons/menu.svg" alt="Burger Menu" width={30} height={30} /></button>
         </motion.div>
     )

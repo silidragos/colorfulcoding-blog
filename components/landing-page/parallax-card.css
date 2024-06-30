@@ -1,0 +1,201 @@
+.parallax-card p {
+    line-height: 1.5em;
+}
+
+.parallax-card h1+p,
+.parallax-card p+p {
+    margin-top: 10px;
+}
+
+.parallax-card {
+    --hover-easing: cubic-bezier(0.23, 1, 0.32, 1);
+    --return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    margin: 20px;
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.parallax-card:hover .card-info {
+    transform: translateY(-20%);
+}
+
+.parallax-card:hover .card-info p {
+    opacity: 1;
+}
+
+.parallax-card:hover .card-info,
+.parallax-card:hover .card-info p {
+    transition: 0.6s;
+}
+
+.parallax-card:hover .card-info:after {
+    transition: 5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.parallax-card:hover .card-bg {
+    transition: 0.6s, opacity 5s;
+    opacity: 0.8;
+    box-shadow:
+        rgba(white, 0.2) 0 0 40px 5px,
+        rgba(white, 1) 0 0 0 1px,
+        rgba(black, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset white 0 0 0 6px;
+}
+
+.parallax-card__content{
+    position: relative;
+    flex: 0 0 720px;
+
+    width: 720px;
+    height: 480px;
+
+    margin: auto;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:
+      rgba(black, 0.66) 0 30px 60px 0,
+      inset #333 0 0 0 5px,
+      inset rgba(white, 0.5) 0 0 0 6px;
+    transition: 1s;
+
+    padding: 50px;
+}
+
+.parallax-card__content::before, .parallax-card__content::after{
+    content: "";
+  
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+  
+    position: absolute;
+    z-index: 2;
+  
+    opacity: .3;
+    transition: .3s;
+}
+
+
+.parallax-card:hover .parallax-card__content::before, .parallax-card:hover .parallax-card__content::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.parallax-card__content::before{
+    top: 2rem;
+    right: 2rem;
+
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.parallax-card__content::after{
+    bottom: 2rem;
+    left: 2rem;
+
+    border-top-width: 0;
+    border-right-width: 0;
+}
+
+.card-bg{
+  opacity: 0.5;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+
+  width: 120%;
+  height: 120%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition:
+    .1s,
+    opacity 5s;
+  pointer-events: none;
+}
+
+.card-info{
+    width: 90%;
+    margin: auto;
+
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateY(35%);
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card-info h1 .icon{
+    display: inline-block;
+
+    background-image: url('/icons/external-link.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.card-info p{
+    opacity: 0;
+    text-shadow: rgba(black, 1) 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card-info *{
+    position: relative;
+    z-index: 1;
+}
+
+.card-info:after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(#000, 0.6) 100%);
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s var(--return-easing);
+}
+
+.card-info h1{
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: rgba(black, 0.5) 0 10px 10px;
+
+  color: white;
+  font-size: 2em;
+  line-height: 1em;
+  /* color: rgb(249 115 22); */
+}
+
+@media screen and (max-width: 800px) {
+    .parallax-card__content{
+        flex: 0 0 360px;
+    
+        width: 360px;
+        height: 320px;
+    }
+
+    .card-info{
+        left: 0;
+        right: 0;
+    }
+
+    .card-info h1{
+        font-size: 22px;
+    }
+
+    .card-info p{
+        font-size: 14px;
+    }
+}
