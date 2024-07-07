@@ -39,7 +39,7 @@ let TeamData = [
 const Team = () => {
     return (
         <div id="team">
-            <section id="team">
+            <section>
                 <StrokeTitle>
                     <h1><span className='text-zinc-900 stroke-text'>Core</span> <span className="text-orange-500">Team</span></h1>
                 </StrokeTitle>
@@ -50,7 +50,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="mx-20 flex flex-wrap justify-center">
+                <div id="#team" className="mx-20 flex flex-wrap justify-center">
                     {TeamData.map((member, idx) => {
                         return (
                             <TeamMember key={idx} 
