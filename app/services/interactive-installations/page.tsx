@@ -1,5 +1,6 @@
 import React from 'react';
 import TopNav from '@/components/TopNav';
+import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
@@ -56,6 +57,8 @@ const HomePage = () => {
         <li><span className='text-orange-500'>In-Street AR Interactive Installations</span>: Transform urban spaces into interactive platforms where pedestrians can engage with digital overlays, games, or informative displays linked to physical locations, turning everyday walks into memorable brand experiences that reinforce consumer engagement and brand presence. These technologies redefine traditional marketing approaches by offering personalized, interactive experiences that resonate with modern consumers seeking engaging interactions with brands.</li>
       </ul>
     </div>
+
+    <Contact></Contact>
   </div >;
 };
 

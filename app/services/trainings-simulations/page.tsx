@@ -1,5 +1,6 @@
 import React from 'react';
 import TopNav from '@/components/TopNav';
+import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
@@ -31,6 +32,8 @@ const HomePage = () => {
       <img src="/article-images/practimentor.png" className='sm:w-full md:w-1/2 m-auto' alt="PractiMentor" />
 
     </div>
+
+    <Contact></Contact>
   </div >;
 };
 

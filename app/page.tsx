@@ -13,6 +13,7 @@ import PortfolioCarousel from '@/components/landing-page/PortfolioCarousel';
 import MainReel from '@/components/landing-page/MainReel';
 import Burtiera from '@/components/landing-page/Burtiera';
 import ServicesCards from '@/components/landing-page/ServicesCards';
+import Team from '@/components/landing-page/Team';
 
 
 const HomePage = () => {
@@ -82,6 +83,10 @@ const HomePage = () => {
       {/* <PortfolioCarousel></PortfolioCarousel> */}
       <ServicesCards></ServicesCards>
     </section>
+
+    
+
+    <Team></Team>
 
 
     <section id="articles" className='my-20'>

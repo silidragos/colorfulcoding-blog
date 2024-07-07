@@ -1,5 +1,6 @@
 import React from 'react';
 import TopNav from '@/components/TopNav';
+import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
@@ -44,6 +45,8 @@ const HomePage = () => {
 
       <p>Technology serves as an indispensable companion to art and cultural festivals, enhancing storytelling and theatrical experiences through a variety of means. From augmented reality enriching interactive art installations to virtual reality immersing viewers in dynamic narratives, these technologies redefine traditional boundaries, offering new dimensions of engagement and creativity. Moreover, plain mobile apps, dashboards, and analytics provide organizers with powerful tools for managing events, analyzing attendee feedback, and enhancing operational efficiency. This integration of digital innovation with cultural heritage not only creates memorable experiences but also democratizes access to artistic expression and cultural narratives, fostering broader audience participation and appreciation.</p>
     </div>
+
+    <Contact></Contact>
   </div >;
 };
 

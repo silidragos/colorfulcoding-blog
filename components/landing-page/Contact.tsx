@@ -37,10 +37,10 @@ const Contact = () => {
                     </div>
 
                     <div className="contact-websites grid grid-cols-3 gap-4 w-3/5 m-auto my-8" style={{ height: "50px" }}>
-                        <div><a className='w-full' target="_blank" href="https://www.linkedin.com/company/colorfulcoding/about/?viewAsMember=true"><Image className='w-full' src="./icons/linkedin.svg" alt="LinkedIn" width={0} height={0} /></a></div>
+                        <div><a className='w-full' target="_blank" href="https://www.linkedin.com/company/colorfulcoding/about/?viewAsMember=true"><Image className='w-full' src="/icons/linkedin.svg" alt="LinkedIn" width={0} height={0} /></a></div>
                         {/* <div><a className='w-full' href=""><Image className='w-full' src="./icons/instagram.svg" alt="Istagram" width={0} height={0} /></a></div> */}
-                        <div><a className='w-full' target="_blank" href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg"><Image className='w-full' src="./icons/youtube.svg" alt="Youtube" width={0} height={0} /></a></div>
-                        <div><a className='w-full' target="_blank" href="https://www.tiktok.com/@colorfulcoding"><Image className='w-full' src="./icons/tiktok.svg" alt="Tiktok" width={0} height={0} /></a></div>
+                        <div><a className='w-full' target="_blank" href="https://www.youtube.com/channel/UC8uHMNgoz4aUbkeQ3CtWQXg"><Image className='w-full' src="/icons/youtube.svg" alt="Youtube" width={0} height={0} /></a></div>
+                        <div><a className='w-full' target="_blank" href="https://www.tiktok.com/@colorfulcoding"><Image className='w-full' src="/icons/tiktok.svg" alt="Tiktok" width={0} height={0} /></a></div>
                     </div>
 
                     <p className='text-center text-white pt-5'>Made with ♥ in Iași</p>

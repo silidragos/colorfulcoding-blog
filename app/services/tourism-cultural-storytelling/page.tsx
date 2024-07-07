@@ -1,5 +1,6 @@
 import React from 'react';
 import TopNav from '@/components/TopNav';
+import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
@@ -56,6 +57,8 @@ const HomePage = () => {
 
 
     </div>
+
+    <Contact></Contact>
   </div >;
 };
 
