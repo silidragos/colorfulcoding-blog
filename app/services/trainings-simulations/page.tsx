@@ -23,13 +23,6 @@ const HomePage = () => {
 
       <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/safety.mp4" />
 
-      <hr className='my-20'></hr>
-
-      <h2 className="text-3xl">PractiMentor(TBD)</h2>
-
-      <p>PractiMentor is the app that allows you to easily create VR training scenarios, sync devices (tablets, smartphones, VR headsets), analyse and improve based on student's performance, and much more. Launch date to be announced.</p>
-
-      <img src="/article-images/practimentor.png" className='sm:w-full md:w-1/2 m-auto' alt="PractiMentor" />
 
     </div>
 
