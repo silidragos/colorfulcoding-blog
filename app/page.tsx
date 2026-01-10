@@ -49,29 +49,28 @@ const HomePage = () => {
         <h1 className='font-bold stroke-text text-zinc-900' style={{ fontSize: "3em" }}>Services</h1>
       </StrokeTitle>
 
-      <Service imgSrc="./icons/product_marketing.svg" imgAlt="Product Marketing" content="We bring products to life with interactive, immersive visuals. Beyond just showcasing a product, this approach allows consumers to explore details intimately, enhancing storytelling and forging a deeper connection between brand and audience.">
-        <h1 className='w-full'><span className='text-orange-500'>3D</span> <br />Product Marketing</h1>
+
+      <Service imgSrc="./icons/digital_heritage.svg" imgAlt="Digital Heritage" content="Transforming cultural heritage into living digital narratives. Using advanced 3D capture and immersive media, we preserve historical sites, artifacts, and traditions while enabling audiences to explore, interact, and connect with them in meaningful ways. Beyond documentation, our work reactivates heritage as an experience bridging past, present, and future">
+        <h1 className='w-full'><span className='text-orange-500'>Digital Heritage &</span><br /> Cultural Storytelling</h1>
+      </Service>
+
+
+      <Service imgSrc="./icons/artistic.svg" imgAlt="Artistic Experiences" content="Creating interactive installations that merge art, space, and emerging technologies. Using holographic displays, generative AI, and computer vision, our works respond to presence, movement, and audience behavior—transforming viewers into active participants. Each installation evolves in real time, creating living experiences where narrative, technology, and human interaction continuously shape one another.">
+        <h1 className='w-full'>Interactive New Media <br /> <span className='text-orange-500'>Installations</span></h1>
+      </Service>
+
+      <Service imgSrc="./icons/vr_world.svg" imgAlt="World Building" content="Creating immersive artistic worlds where story, space, and interaction intertwine. Through rich visual content, worldbuilding, and procedural or parametric systems, these environments evolve through participation—inviting audiences to explore, shape, and inhabit the narrative, transforming storytelling into something lived rather than observed.">
+        <h1 className='w-full'>Immersive Arts & <br /><span className='text-orange-500'>Storytelling Experiences</span></h1>
       </Service>
 
       <Service imgSrc="./icons/educational_tools.svg" imgAlt="Educational Tools" content="Our goal is to elevate learning by plunging students into interactive experiences. Beyond traditional methods, we want to help enhance comprehension, foster engagement, and make complex concepts accessible and memorable.">
-        <h1 className='w-full'>Immersive <br /><span className='text-orange-500'>Educational Tools</span></h1>
-      </Service>
-
-      <Service imgSrc="./icons/digital_heritage.svg" imgAlt="Digital Heritage" content="3D digital heritage captures the past in vivid detail, preserving historical treasures in interactive formats. Beyond mere archiving, it breathes life into ancient relics and stories, offering a tangible connection to our shared history.">
-        <h1 className='w-full'><span className='text-orange-500'>3D</span> <br /> Digital Heritage</h1>
+        <h1 className='w-full'>VR Trainings, Simulation <br /><span className='text-orange-500'>and Education</span></h1>
       </Service>
 
       <Service imgSrc="./icons/digital_twin.svg" imgAlt="Digital Twins" content="Digital Twins blend the real and virtual, creating dynamic replicas of physical entities. More than just simulations, they offer real-time insights, enhance operational efficiency, and provide a bridge between digital and tangible realms.">
         <h1 className='w-full'>XR <span className='text-orange-500'>Digital Twin</span> <br /> Technologies</h1>
       </Service>
 
-      <Service imgSrc="./icons/artistic.svg" imgAlt="Artistic Experiences" content="We thrive to transcend traditional boundaries, merging art with immersive technology. Beyond just viewing, we invite audiences to engage, interact, and become part of the evolving narrative, offering a deeper connection to the artistic intent.">
-        <h1 className='w-full'>XR <span className='text-orange-500'>Artistic <br /> Experiences</span></h1>
-      </Service>
-
-      <Service imgSrc="./icons/vr_world.svg" imgAlt="World Building" content="Crafting interactive universes where users connect and collaborate. Beyond just digital realms, these environments foster community, enable shared experiences, and reshape the way we perceive virtual social interaction.">
-        <h1 className='w-full'>Social <span className='text-orange-500'>VR World<br /> Building</span></h1>
-      </Service>
     </section>
 
     <section id="projects" className='my-40'>
@@ -84,7 +83,7 @@ const HomePage = () => {
       <ServicesCards></ServicesCards>
     </section>
 
-    
+
 
     <Team></Team>
 

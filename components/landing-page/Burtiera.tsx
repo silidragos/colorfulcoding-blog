@@ -20,14 +20,14 @@ const MainReel = () => {
 
 
     function handleWindowSizeChange() {
-        if(typeof window === 'undefined') return;
+        if (typeof window === 'undefined') return;
 
         setIsMobile(window.innerWidth < 768);
     }
 
     useEffect(() => {
-        if(typeof window === 'undefined') return;
-        
+        if (typeof window === 'undefined') return;
+
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
@@ -47,17 +47,17 @@ const MainReel = () => {
                 <div className='text-zinc-900 bg-white font-bold text-lg py-2 burtiera_wrapper_one'>
                     <div className='burtiera burtiera-1'>
                         {isMobile ?
-                            <span>XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. </span>
+                            <span>XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL. </span>
                             :
-                            <span>XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL.</span>
-                        }   
+                            <span>XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL. XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL.</span>
+                        }
                     </div>
                     <div className='burtiera burtiera-2'>
                         {isMobile ?
-                            <span>XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. </span>
+                            <span>XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL. </span>
                             :
-                            <span>XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL. XR. VR. TOURISM. EDUCATIONAL. MARKETING. INDUSTRIAL. CULTURAL.</span>
-                        } 
+                            <span>XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL. XR. VR. CULTURE. TOURISM. STORY. IMMERSION. EDUCATION. SIMULATION. DIGITAL TWINS. AI. SPATIAL.</span>
+                        }
                     </div>
                 </div>
             </motion.div>
@@ -73,17 +73,17 @@ const MainReel = () => {
                 <div className='text-zinc-900 bg-orange-500 font-bold text-lg py-2 burtiera_wrapper_two'>
                     <div className='burtiera burtiera-1'>
                         {isMobile ?
-                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
+                            <span>META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. </span>
                             :
-                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
-                        } 
+                            <span>META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. HAPTIC. </span>
+                        }
                     </div>
                     <div className='burtiera burtiera-2'>
                         {isMobile ?
-                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. </span>
+                            <span>META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. </span>
                             :
-                            <span>APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP. APPLE VISIONPRO. HOLOLENS. META QUEST. META PRO. ANDROID. IOS. DESKTOP.  </span>
-                        } 
+                            <span>META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. META QUEST. VISION PRO. ANDROID. IOS. DESKTOP. HOLOGRAMS. AI. SPATIAL. VIDEOMAPPING. HAPTIC.  </span>
+                        }
                     </div>
                 </div>
             </motion.div>
