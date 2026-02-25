@@ -10,6 +10,15 @@
 - [USV - Agriculture Digital Twin Educational App]()
 - [Metavet VR - Introductory UR5e Courses]() 
 - [PractiMentor PoC](), TRL 3 to 5
+- ArtLink Spaces
+    - NMD
+    - Avenor 
+- Web AI NPC
+    - Buhuși Q&A Assistant
+- AI Photobooth - Nano Banana
+    - Groom Costume Tryout
+    - 6 hands generator
+    - Branded Formula 1
 
 
 ### 2025
@@ -123,7 +132,7 @@
 ## Artistic expression
 
 ### 2025
-- [Dark Play](https://teatrul-excelsior.ro/spectacol/dark-play/) at Excelsior Theatre, Bucharest
+- [Dark Play](https://teatrul-excelsior.ro/spectacol/dark-play/) at Excelsior Theatre, Bucharest. [Best Video Design Awards Nominee UNITER 2026](https://www.uniter.ro/premiile-senatului-si-nominalizarile-pentru-premiile-galei-uniter-2026/)
 - MDLR, Proximity Interactive Dodecahedron, New Media District 2025, Iași
 - Modesty Mirror, AI Face Control Interactive Installation , New Media District 2025, Iași
 
