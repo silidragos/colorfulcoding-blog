@@ -19,7 +19,7 @@ let cardInfo = [
         title: <>VR Trainings, Simulation <br /><span className="text-orange-500">and Education</span></>,
         description: "Enhance learning with interactive simulations and training tools. Increase accessibility, and make learning fun, while having access to detailed analytics.",
         bgImage: "/parallaxCards/training-bg.png",
-        url: "/services/trainings-simulations",
+        url: "/practimentor-about",
         external: false
     },
     {

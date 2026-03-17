@@ -7,8 +7,8 @@
 ## Past Technical Works
 
 ### 2026
-- [USV - Agriculture Digital Twin Educational App]()
-- [Metavet VR - Introductory UR5e Courses]() 
+- USV - Agriculture Digital Twin Educational App
+- [Metavet VR - Introductory UR5e Courses](https://metavet-project.eu/) 
 - [PractiMentor PoC](), TRL 3 to 5
 - ArtLink Spaces
     - NMD
@@ -19,6 +19,8 @@
     - Groom Costume Tryout
     - 6 hands generator
     - Branded Formula 1
+    - Car Launch
+    - Gin Brand - Ski to Holiday
 
 
 ### 2025
@@ -130,6 +132,11 @@
 --- 
 
 ## Artistic expression
+
+### 2026
+- New Media District 2026
+    - ArtLink Spaces x NMD - TBD
+    - Modesty Mirror
 
 ### 2025
 - [Dark Play](https://teatrul-excelsior.ro/spectacol/dark-play/) at Excelsior Theatre, Bucharest. [Best Video Design Awards Nominee UNITER 2026](https://www.uniter.ro/premiile-senatului-si-nominalizarile-pentru-premiile-galei-uniter-2026/)
