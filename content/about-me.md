@@ -7,9 +7,10 @@
 ## Past Technical Works
 
 ### 2026
+- MetaSensys - PLATFORMĂ MOBILĂ BAZATĂ PE LIDAR PENTRU PERSONALIZAREA DIGITALĂ A HAINELOR PRIN AVATARURI 3D INTEGRATE ÎN FLUXURI CAD DE PRODUCȚIE VESTIMENTARĂ
 - USV - Agriculture Digital Twin Educational App
 - [Metavet VR - Introductory UR5e Courses](https://metavet-project.eu/) 
-- [PractiMentor PoC](), TRL 3 to 5
+- [PractiMentor]() - Platformă modulară de training VR asistat de AI - TRL 3-to-5
 - ArtLink Spaces
     - NMD
     - Avenor 
@@ -164,6 +165,7 @@
 ## Side Projects
 
 ### 2026
+- MyClaw - Discord-controlled self-hosted univeral Agent
 - Agentic News Digester (WIP)
 - OmniUI, UIToolkit Library (WIP)
 - [LivePortrait editor](https://www.youtube.com/watch?v=dlbGIwlk1rE)
@@ -183,6 +185,7 @@
 ---
 
 ## Talks, Conferences & Exhibitions
+- Organizing Team at [New Media Jam 2026](https://www.instagram.com/newmediajam/)
 - Teaching ["Introduction to Mixed Realities"](https://edu.info.uaic.ro/introducere-realitati-mixte/) Laboratory, Year 3, Semester 1, Faculty of Computer Science, University Al. I. Cuza, Iași, 2020-Present
 - [Codecamp Brasov, 2025](https://codecamp.ro/conferences/codecamp-brasov-2025/) ➡️ Splats over Pixels; Rethinking the future of 3D
 - [Codecamp Iasi, 2025](https://codecamp.ro/codecamp-festival-iasi-2025/) ➡️ Splats over Pixels; Rethinking the future of 3D
@@ -209,6 +212,9 @@ PhD Year 3 Essay. Exploring 3D Gaussian Splatting and the Combination of it with
 PhD Year 2 Essay. Institution XR Digitalization - Deep-dive into Data Acquisition
 
 PhD Year 1 Essay. XR Digital Transformation for Large Scale Institutions: From Digital Twins to ARCloud
+
+Silion Dragos, George-Gabriel Constantinescu, Adrian Iftene
+Digital Twin Environments in Virtual Reality for Natural Disaster Awareness and Training
 
 D. Silion, A. Iftene
 Virtualizing Interior Spaces: A Survey of 3D Capturing Tools for XR Visualization 29th International Conference on Knowledge-Based and Intelligent Information & Engineering  Systems (KES 2025), Procedia Computer Science 270, 1659–1668 (CORE B)
