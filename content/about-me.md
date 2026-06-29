@@ -175,9 +175,9 @@
 ### 2026
 - NewMediaArchive ?? 
 - Romanian Agentic Home Assistant (esp-home)
-- MyClaw - Discord-controlled self-hosted univeral Agent
-- Agentic News Digester (WIP)
-- OmniUI, UIToolkit Library (WIP)
+- MyClaw - Discord-controlled self-hosted univeral Agent (cancelled)
+- Agentic News Digester (cancelled)
+- OmniUI, UIToolkit Library (hold)
 - [LivePortrait editor](https://www.youtube.com/watch?v=dlbGIwlk1rE)
 
 ### 2025
