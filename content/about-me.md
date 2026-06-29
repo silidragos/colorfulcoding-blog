@@ -16,12 +16,19 @@
     - Avenor 
 - Web AI NPC
     - Buhuși Q&A Assistant
+- AI NPC
+    - Aya
+    - Holobox Demo (Default Lady)
 - AI Photobooth - Nano Banana
     - Groom Costume Tryout
     - 6 hands generator
     - Branded Formula 1
-    - Car Launch
+    - Car Launch (1, 2)
     - Gin Brand - Ski to Holiday
+    - Shakespeare event
+    - Puppy Filter
+    - 1920s
+- Touch and Throw apps + Custom Videos
 
 
 ### 2025
@@ -135,6 +142,7 @@
 ## Artistic expression
 
 ### 2026
+- ?? - Square IR Tracker
 - New Media District 2026
     - ArtLink Spaces x NMD - TBD
     - Modesty Mirror
@@ -165,6 +173,8 @@
 ## Side Projects
 
 ### 2026
+- NewMediaArchive ?? 
+- Romanian Agentic Home Assistant (esp-home)
 - MyClaw - Discord-controlled self-hosted univeral Agent
 - Agentic News Digester (WIP)
 - OmniUI, UIToolkit Library (WIP)
@@ -212,6 +222,10 @@ PhD Year 3 Essay. Exploring 3D Gaussian Splatting and the Combination of it with
 PhD Year 2 Essay. Institution XR Digitalization - Deep-dive into Data Acquisition
 
 PhD Year 1 Essay. XR Digital Transformation for Large Scale Institutions: From Digital Twins to ARCloud
+
+(WIP) Jurnal
+
+(WIP) Paper Gabi INISTA
 
 Silion Dragos, George-Gabriel Constantinescu, Adrian Iftene
 Digital Twin Environments in Virtual Reality for Natural Disaster Awareness and Training
