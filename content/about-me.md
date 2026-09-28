@@ -20,9 +20,12 @@
   - Avenor
 - Web AI NPC
   - Buhuși Q&A Assistant
+  - 2D talking painting (MuseTalk)
 - AI NPC
   - Aya
   - Holobox Demo (Default Lady)
+    - Selfie mode
+    - Integration with AI photobooth
 - AI Photobooth - Nano Banana
   - Groom Costume Tryout
   - 6 hands generator
