@@ -2,7 +2,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 32px;
     padding: clamp(48px, 5vw, 80px) 5% 28px;
     background: radial-gradient(ellipse at 52% 25%, #ff882b, #fc6c16 60%, #cc4c10);
     text-align: center;
@@ -35,16 +35,16 @@
     pointer-events: none;
 }
 .content { max-width: 1100px; margin: auto; }
-.content h2 { font-size: clamp(32px, 3.4vw, 54px); font-weight: 700; line-height: 1.08; letter-spacing: -.035em; margin: 0; color: #fff; }
+.content h2 { font-size: clamp(32px, 3.4vw, 54px); font-weight: 700; line-height: 1.08; letter-spacing: -.035em; margin: 0; color: #18181b; }
 .content h2 span { color: #18181b; }
-.description { margin: 24px auto 28px; max-width: 68ch; color: white; font-size: clamp(17px, 1.25vw, 21px); line-height: 1.45; }
+.description { margin: 24px auto 28px; max-width: 68ch; color: #18181b; font-size: clamp(17px, 1.25vw, 21px); line-height: 1.45; }
 .contact { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 56px; padding: 14px 42px; border-radius: 99px; color: white; background: #18181b; font-size: 19px; font-weight: 700; }
 .contact span { color: #ff812d; font-size: 25px; }
 .socials { display: flex; justify-content: center; gap: 26px; margin-top: 32px; }
 .socials a { display: block; border-radius: 50%; }
 .socials img { width: 46px; height: 46px; }
 .credit { margin-top: 32px; color: #18181b; font-size: 14px; }
-.footer a:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+.footer a:focus-visible { outline: 3px solid #18181b; outline-offset: 5px; }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     .contact, .socials a { transition: transform 200ms ease, background 200ms ease; }
     .contact:hover { background: #303033; transform: translateY(-2px); }
