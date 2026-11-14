@@ -299,3 +299,9 @@ h2 {
         padding-block: calc(24px + 4vw);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .burtiera span { animation: none; }
+    .burtiera-2 { display: none; }
+}
