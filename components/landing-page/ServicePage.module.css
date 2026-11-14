@@ -66,3 +66,5 @@
     .article h1 { margin-bottom: 40px; }
     .article h2 { margin-top: 44px; }
 }
+
+.header nav a { display: inline-flex; align-items: center; min-height: 44px; }

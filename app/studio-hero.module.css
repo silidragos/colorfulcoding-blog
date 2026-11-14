@@ -223,3 +223,6 @@
   .copy h1 em { white-space: nowrap; }
   .reel { max-width: 620px; }
 }
+
+.menuToggle:hover { background: #5c2d1d; }
+.cta:active, .menuToggle:active { filter: brightness(.85); }
