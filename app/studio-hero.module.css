@@ -58,7 +58,7 @@
 .reel button {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(54px,6vw,96px);aspect-ratio:1;border:2px solid white;border-radius:50%;display:grid;place-items:center;background:#161619b8;color:white;}
 .reel button:hover {background:#a94419;}
 .cover :focus-visible {outline:3px solid white;outline-offset:4px;}
-@media(max-width:760px){.header{flex-wrap:wrap;gap:18px;padding:22px 0;}.header img{width:158px;}.header nav{width:100%;justify-content:space-between;gap:6px;font-size:clamp(12px,3vw,16px);}.header nav a:last-child{padding:6px 10px;}.grid{grid-template-columns:1fr;gap:34px;padding:38px 0 46px;min-height:auto;}.copy h1{font-size:clamp(40px,8.5vw,62px);max-width:100%;}.copy p{margin:16px 0 20px;}}
+@media(max-width:960px){.header{flex-wrap:wrap;gap:18px;padding:22px 0;}.header img{width:158px;}.header nav{width:100%;justify-content:space-between;gap:6px;font-size:clamp(12px,3vw,16px);}.header nav a:last-child{padding:6px 10px;}.grid{grid-template-columns:1fr;gap:34px;padding:38px 0 46px;min-height:auto;}.copy h1{font-size:clamp(40px,8.5vw,62px);max-width:100%;}.copy p{margin:16px 0 20px;}}
 
 @keyframes reveal {
   from {transform:translateY(12px);}
@@ -152,7 +152,7 @@
   outline: 3px solid white;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .cover {
     background: #131315;
   }
@@ -206,4 +206,20 @@
   .reel { width: calc(100% - 10px); justify-self: center; }
   .introductionCopy { font-size: 17px; line-height: 1.7; }
   .lead { font-size: 22px; line-height: 1.4; letter-spacing: -.02em; }
+}
+
+.menuToggle { display: none; }
+.header nav a { white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 960px) {
+  .header { gap: 16px; padding-block: 20px; }
+  .menuToggle { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 44px; padding: 8px 16px; border: 1px solid var(--ink); border-radius: 24px; font-weight: 700; }
+  .menuToggle span { font-size: 22px; line-height: 1; color: var(--ink); }
+  .header nav { display: none; }
+  .header nav[data-open="true"] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; padding-top: 16px; border-top: 1px solid #ffffff30; }
+  .header nav a { padding: 8px 12px; }
+  .header nav a:last-child { justify-self: start; }
+  .grid { max-width: 680px; }
+  .copy h1 { max-width: 19ch; }
+  .copy h1 em { white-space: nowrap; }
+  .reel { max-width: 620px; }
 }

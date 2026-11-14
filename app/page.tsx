@@ -2,7 +2,7 @@ import React from 'react';
 import PortfolioLink from '@/components/landing-page/PortfolioLink';
 import hero from './studio-hero.module.css';
 
-import Image from 'next/image';
+import StudioHeader from '@/components/landing-page/StudioHeader';
 
 import IntroLogo from '@/components/landing-page/IntroLogo';
 import StrokeTitle from '@/components/landing-page/StrokeTitle';
@@ -24,12 +24,7 @@ const HomePage = () => {
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
     <section id="home" className='mb-20'>
       <div className={hero.cover}>
-        <header className={hero.header}>
-          <a href="#home"><Image src="/icons/icon_large.svg" alt="ColorfulCoding" width={194} height={33} /></a>
-          <nav aria-label="Main navigation">
-            <a href="#home">About</a><a href="#services">Services</a><a href="#projects">Selected Work</a><a href="#team">Team</a><a href="#contact">Contact Us <span aria-hidden="true">↗</span></a>
-          </nav>
-        </header>
+        <StudioHeader />
         <div className={hero.grid}>
           <div className={hero.copy}>
             <div className={hero.eyebrow}>WORLDS WORTH EXPERIENCING</div>
