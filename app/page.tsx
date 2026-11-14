@@ -21,7 +21,7 @@ const HomePage = () => {
 
 
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-    <section id="home" className='mb-20'>
+    <section id="home">
       <div className={hero.cover}>
         <StudioHeader />
         <div className={hero.grid}>
@@ -80,7 +80,7 @@ const HomePage = () => {
 
     <Platforms />
 
-    <section id="projects" className='my-40'>
+    <section id="projects" className={services.projects}>
       <h2 className={services.heading}>Selected <span>Work</span></h2>
 
       {/* <PortfolioCarousel></PortfolioCarousel> */}

@@ -2,7 +2,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    padding: clamp(64px, 7vw, 112px) 0 clamp(100px, 12vw, 180px);
+    padding: var(--section-space) 0 64px;
     background: linear-gradient(#18181b, #141416 32%, #141416 80%, #18181b);
 }
 .section::before {

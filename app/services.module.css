@@ -2,7 +2,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: clamp(48px, 7vw, 110px) 0 clamp(100px, 13vw, 210px);
+  padding: var(--section-space) 0 clamp(80px, 8vw, 128px);
   background: #18181b;
 }
 .section::before {
@@ -82,9 +82,11 @@
 }
 
 @media (min-width: 1024px) {
-  .section { padding-top: 120px; padding-bottom: 240px; }
-  .grid { margin-top: 88px; }
+  .section { padding-top: var(--section-space); padding-bottom: 128px; }
+  .grid { margin-top: 48px; }
   .service { padding-top: 16px; padding-bottom: 24px; }
   .service h3 { margin-top: 32px; margin-bottom: 20px; line-height: 1.25; }
   .service p { line-height: 1.7; }
 }
+
+.projects { padding-top: var(--section-space); padding-bottom: 24px; scroll-margin-top: 24px; }

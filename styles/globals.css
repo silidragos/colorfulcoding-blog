@@ -297,12 +297,12 @@ h2 {
 }
 /* Reserve space for the rotated ribbons before the following section paints. */
 .burtiera-stage {
-    padding-block: calc(40px + 12vw);
+    padding-block: calc(24px + 10vw);
 }
 
 @media (min-width: 800px) {
     .burtiera-stage {
-        padding-block: calc(24px + 4vw);
+        padding-block: calc(16px + 3vw);
     }
 }
 
