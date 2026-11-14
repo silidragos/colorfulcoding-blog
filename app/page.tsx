@@ -5,7 +5,6 @@ import hero from './studio-hero.module.css';
 import StudioHeader from '@/components/landing-page/StudioHeader';
 
 import IntroLogo from '@/components/landing-page/IntroLogo';
-import StrokeTitle from '@/components/landing-page/StrokeTitle';
 import services from './services.module.css';
 import Service from '@/components/landing-page/ServiceCategory';
 import Contact from '@/components/landing-page/Contact';
@@ -82,10 +81,7 @@ const HomePage = () => {
     <Platforms />
 
     <section id="projects" className='my-40'>
-      <StrokeTitle>
-        <h1><span className="text-orange-500">Selected Work</span></h1>
-        {/* <span className='text-zinc-900 stroke-text'>Services</span> &  */}
-      </StrokeTitle>
+      <h2 className={services.heading}>Selected <span>Work</span></h2>
 
       {/* <PortfolioCarousel></PortfolioCarousel> */}
       <ServicesCards></ServicesCards>

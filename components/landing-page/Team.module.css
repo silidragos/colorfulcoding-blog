@@ -32,9 +32,9 @@
     pointer-events: none;
 }
 .inner { width: min(91%, 1600px); margin-inline: auto; }
-.heading { margin: 0; text-align: center; font-size: clamp(34px, 4vw, 66px); font-weight: 700; line-height: 1.12; letter-spacing: -.035em; }
+.heading { margin: 0; text-align: left; font-size: var(--section-heading-size); font-weight: 700; line-height: 1.12; letter-spacing: -.035em; }
 .heading span { color: #ff7138; }
-.description { max-width: 80ch; margin: 24px auto 64px; text-align: center; color: #cfcdd0; font-size: clamp(17px, 1.4vw, 23px); line-height: 1.55; }
+.description { max-width: 65ch; margin: 24px 0 48px; text-align: left; color: #cfcdd0; font-size: clamp(17px, 1.4vw, 23px); line-height: 1.55; }
 .grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(20px, 3vw, 48px); }
 .member { text-align: center; min-width: 0; }
 .portrait { width: 100%; aspect-ratio: 1; height: auto; object-fit: cover; border: 5px solid #ff7138; border-radius: 50%; box-shadow: 0 6px 22px #ff713812; }

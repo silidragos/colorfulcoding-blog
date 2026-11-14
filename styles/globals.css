@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 
+:root {
+    --section-heading-size: clamp(32px, 3vw, 48px);
+    --section-space: clamp(56px, 6vw, 96px);
+    --brand-orange: #ff7138;
+}
+
 html {
     scroll-behavior: smooth;
 }
