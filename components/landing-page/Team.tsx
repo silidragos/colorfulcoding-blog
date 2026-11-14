@@ -3,7 +3,7 @@ import TeamMember from "./TeamMember";
 
 let TeamData = [
     {
-        img: '/team/dragos.png',
+        img: '/team/dragos-new.png',
         name: "Dragoș Silion",
         role: "CEO & XR Developer",
     },

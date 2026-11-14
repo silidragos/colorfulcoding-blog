@@ -15,7 +15,7 @@ const platforms = [
         category: "Training & Simulation",
         tagline: "Learn by doing. Anywhere.",
         description: "An immersive training platform for creating, delivering, and managing interactive learning experiences across VR, desktop, and web.",
-        image: "/article-images/practimentor.png",
+        image: "/article-images/practimentor.jpg",
         href: "https://www.practimentor.com/",
         fundingHref: "/practimentor-about",
     },

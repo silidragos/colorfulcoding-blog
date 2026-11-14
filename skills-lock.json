@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "design-review": {
+      "source": "vltansky/skills",
+      "sourceType": "github",
+      "skillPath": "skills/design-review/SKILL.md",
+      "computedHash": "e652ed75203913482fa78c5e1070dbc4f7539b0d190eb6b1ba63b70d021bd6d8"
+    }
+  }
+}
