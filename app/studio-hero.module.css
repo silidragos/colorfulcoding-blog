@@ -226,3 +226,10 @@
 
 .menuToggle:hover { background: #5c2d1d; }
 .cta:active, .menuToggle:active { filter: brightness(.85); }
+
+@media (max-width: 380px) {
+  .header { gap: 10px; }
+  .header img { width: 136px; }
+  .menuToggle { gap: 10px; padding-inline: 12px; font-size: 14px; }
+  .eyebrow { font-size: 10px; letter-spacing: .06em; }
+}
