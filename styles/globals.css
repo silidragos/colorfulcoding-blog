@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -17,7 +18,7 @@ body {
 
     overflow-x: hidden;
     max-width: 100%;
-    min-width: fit-content;
+    min-width: 0;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
 h2 {
     color: white;
     font-size: 1.15em;
-    font-weight: 900;
+    font-weight: 700;
 
     margin: 10px 0;
 }
@@ -286,5 +287,15 @@ h2 {
 .activeOnDesktop {
     @media screen and (max-width: 800px) {
         display: none;
+    }
+}
+/* Reserve space for the rotated ribbons before the following section paints. */
+.burtiera-stage {
+    padding-block: calc(40px + 12vw);
+}
+
+@media (min-width: 800px) {
+    .burtiera-stage {
+        padding-block: calc(24px + 4vw);
     }
 }

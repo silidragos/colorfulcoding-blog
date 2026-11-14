@@ -2,52 +2,45 @@ import ParallaxCard from "./ParallaxCard";
 
 let cardInfo = [
     {
-        title: <>Immersive Arts &<br /> <span className="text-orange-500">Storytelling</span></>,
+        title: "Immersive Art & Interactive Storytelling",
         description: "Bring exhibits to life, and tell your story in a new and engaging way, while letting us take care of all your technical worries.",
         bgImage: "/parallaxCards/arts-bg.jpg",
         url: "/services/arts-immersive-experiences",
         external: false
     },
     {
-        title: <>Digital Heritage & <br /><span className="text-orange-500">Cultural Storytelling</span></>,
-        description: "Engage visitors with interactive storytelling, while bringing your heritage to life.",
+        title: "Digital Heritage & Cultural Exploration",
+        description: "We digitally reconstruct historic places, artifacts, and environments, transforming cultural heritage into interactive experiences for museums, institutions, and visitors.",
         bgImage: "/parallaxCards/tourism-bg.jpg",
         url: "/services/tourism-cultural-storytelling",
         external: false
     },
     {
-        title: <>VR Trainings, Simulation <br /><span className="text-orange-500">and Education</span></>,
-        description: "Enhance learning with interactive simulations and training tools. Increase accessibility, and make learning fun, while having access to detailed analytics.",
+        title: "VR Training, Simulation & Digital Twins",
+        description: "We create immersive training environments and interactive digital twins that help people practice procedures, explore complex systems, and develop practical skills in safe, realistic simulations.",
         bgImage: "/parallaxCards/training-bg.png",
         url: "/practimentor-about",
         external: false
     },
     {
-        title: <>Interactive Installations & <br /><span className="text-orange-500">Promotional Campaigns</span></>,
-        description: "Engage your audience with cutting edge technology and memorable experiences, either if it is for a conference stand, or a nation/world-wide campaign.",
+        title: "Interactive Installations & Brand Experiences",
+        description: "We design engaging XR experiences for brands, events, and public spaces, combining creative storytelling with interactive technology to turn audiences into active participants.",
         bgImage: "/parallaxCards/installation-bg.jpg",
         url: "/services/interactive-installations",
         external: false
-    },
-    {
-        title: <>ArtLink <span className="icon"></span><br /> <p><span className="text-orange-500">The artworld at your fingertips</span></p></>,
-        description: "Explore the 2500+ freely accesible immersive art pieces hosted on our platform, or be part of the 90+ cultural events empowered by Artlink. Available for free on both Android and iOS.",
-        bgImage: "/parallaxCards/artlink_bg.jpg",
-        url: "https://bit.ly/ArtLinkDownload",
-        external: true
     }
 ]
 
 const ServicesCards = () => {
 
     return (
-        <div className="py-20 flex flex-wrap justify-center">
-            {cardInfo.map((card, idx) => {
+        <div className="project-grid">
+            {cardInfo.map((card) => {
                 return (
                     <ParallaxCard
                         title={card.title}
                         description={card.description}
-                        targetId={idx}
+                        key={card.url}
                         bgImage={card.bgImage}
                         url={card.url}
                         external={card.external}

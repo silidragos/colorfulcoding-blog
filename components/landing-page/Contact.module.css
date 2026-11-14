@@ -1,0 +1,56 @@
+.footer {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin-top: 80px;
+    padding: clamp(48px, 5vw, 80px) 5% 28px;
+    background: radial-gradient(ellipse at 52% 25%, #ff882b, #fc6c16 60%, #cc4c10);
+    text-align: center;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    right: -30px;
+    width: min(36vw, 480px);
+    height: 360px;
+    background: radial-gradient(#ffc184 2px, transparent 2.6px) 0 0 / 11px 11px;
+    mask-image: radial-gradient(ellipse at top right, black, transparent 73%);
+    pointer-events: none;
+}
+.footer::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 65%;
+    height: 230px;
+    left: -30%;
+    bottom: -130px;
+    border-radius: 50%;
+    transform: rotate(18deg);
+    border-top: 1px solid #ffc09550;
+    background: linear-gradient(160deg, #b23a1438, transparent);
+    box-shadow: 0 -22px 0 #ffb06b12, 0 -44px 0 #ffb06b0a;
+    pointer-events: none;
+}
+.content { max-width: 1100px; margin: auto; }
+.content h2 { font-size: clamp(32px, 3.4vw, 54px); font-weight: 700; line-height: 1.08; letter-spacing: -.035em; margin: 0; color: #fff; }
+.content h2 span { color: #18181b; }
+.description { margin: 24px auto 28px; max-width: 68ch; color: white; font-size: clamp(17px, 1.25vw, 21px); line-height: 1.45; }
+.contact { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 56px; padding: 14px 42px; border-radius: 99px; color: white; background: #18181b; font-size: 19px; font-weight: 700; }
+.contact span { color: #ff812d; font-size: 25px; }
+.socials { display: flex; justify-content: center; gap: 26px; margin-top: 32px; }
+.socials a { display: block; border-radius: 50%; }
+.socials img { width: 46px; height: 46px; }
+.credit { margin-top: 32px; color: #18181b; font-size: 14px; }
+.footer a:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .contact, .socials a { transition: transform 200ms ease, background 200ms ease; }
+    .contact:hover { background: #303033; transform: translateY(-2px); }
+    .socials a:hover { transform: translateY(-3px); }
+}
+@media (max-width: 640px) {
+    .desktopBreak { display: none; }
+    .footer::before { width: 65vw; opacity: .6; }
+}

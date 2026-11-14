@@ -1,30 +1,16 @@
-"use client"
+"use client";
+import { useRef, useState } from "react";
+import hero from "../../app/studio-hero.module.css";
 
-import React, { useEffect, useState } from "react";
-
-const MainReel = () => {
-    const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 768);
-
-    function handleWindowSizeChange() {
-        if(typeof window === 'undefined') return;
-        setIsMobile(window.innerWidth < 768);
-    }
-    useEffect(() => {
-        if(typeof window === 'undefined') return;
-
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
-
-    return (
-        <div>
-            <video className="w-full"style={{ maxWidth: "100%" }} autoPlay muted loop playsInline>
-                <source src={isMobile ? "./video/reel_compressed.mp4" : "./video/reel_wide_compressed.mp4"} type="video/mp4" />
-            </video>
-        </div>
-    )
+export default function MainReel() {
+  const video = useRef<HTMLVideoElement>(null);
+  const [started, setStarted] = useState(false);
+  return <div className={hero.reel} data-preview={!started}>
+    <video ref={video} controls={started} playsInline preload="none" poster="/images/studio-reel.jpg" aria-label="ColorfulCoding studio reel" onEnded={() => setStarted(false)}>
+      <source src="/video/reel_wide_compressed.mp4" type="video/mp4" />
+    </video>
+    {!started && <button aria-label="Play studio reel" onClick={() => { video.current?.play().then(() => setStarted(true)).catch(() => setStarted(true)); }}>
+      <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="currentColor" d="M7 3.8a1 1 0 0 1 1.5-.86l13 8.2a1 1 0 0 1 0 1.72l-13 8.2A1 1 0 0 1 7 20.2z"/></svg>
+    </button>}
+  </div>;
 }
-
-export default MainReel;

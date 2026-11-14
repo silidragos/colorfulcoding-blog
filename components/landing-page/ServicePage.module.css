@@ -1,0 +1,68 @@
+.page {
+    position: relative;
+    isolation: isolate;
+    background: radial-gradient(ellipse 650px 450px at 100% 0, #ef64151a, transparent), #18181b;
+}
+.header {
+    width: min(91%, 1440px);
+    margin: auto;
+    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.header nav { display: flex; align-items: center; gap: 32px; font-size: 16px; font-weight: 700; }
+.contact { border: 1px solid #ff7138; border-radius: 100px; padding: 10px 20px; }
+.header a:hover { color: #ff945e; }
+.page a:focus-visible { outline: 2px solid #ff7138; outline-offset: 5px; }
+.article {
+    width: min(91%, 1120px);
+    margin: auto;
+    padding: clamp(40px, 6vw, 96px) 0 80px;
+    color: #d8d5d6;
+    font-size: clamp(17px, 1.3vw, 21px);
+    line-height: 1.75;
+}
+.article h1 {
+    max-width: 22ch;
+    margin: 0 0 64px;
+    text-align: left;
+    color: #faf9f7;
+    font-size: clamp(36px, 4.8vw, 72px);
+    line-height: 1.07;
+    letter-spacing: -.045em;
+    text-wrap: balance;
+}
+.article h2 {
+    max-width: 30ch;
+    margin: 64px 0 24px;
+    color: #faf9f7;
+    font-size: clamp(26px, 2.6vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+.article p, .article ul { max-width: 75ch; margin: 24px 0; }
+.article ul { padding-left: 24px; list-style: disc; }
+.article li { padding-left: 8px; margin: 16px 0; }
+.article li::marker { color: #ff7138; }
+.article > br { display: none; }
+.article img, .article video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 32px auto;
+    border: 1px solid #ffffff30;
+    border-radius: 16px;
+    background: #202022;
+}
+.article video { max-height: 680px; object-fit: contain; }
+.article hr { border-color: #ffffff20; margin: 56px 0; }
+@media (max-width: 600px) {
+    .header { flex-wrap: wrap; gap: 20px; }
+    .header nav { gap: 20px; font-size: 14px; }
+    .header img { width: 170px; height: auto; }
+    .article h1 { margin-bottom: 40px; }
+    .article h2 { margin-top: 44px; }
+}

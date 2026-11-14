@@ -1,15 +1,14 @@
 import React from 'react';
-import TopNav from '@/components/TopNav';
+import ServicePage from '@/components/landing-page/ServicePage';
 import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-    <TopNav></TopNav>
-    <div className='my-40 px-20'>
+    <ServicePage>
       <h1 className='text-5xl mb-20'>Tourism & <br /> <span className='text-orange-500'>Cultural Storytelling</span></h1>
       
-      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/liminal.mp4" />
+      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' controls playsInline preload="metadata" src="/article-images/liminal.mp4" />
 
       <h2 className="text-3xl">Urban AR Experiences</h2>
 
@@ -56,7 +55,7 @@ const HomePage = () => {
       <img src="/article-images/collage-scans.png" className='sm:w-full my-20 md:w-1/2 m-auto' alt="XR Arts Collage" />
 
 
-    </div>
+    </ServicePage>
 
     <Contact></Contact>
   </div >;

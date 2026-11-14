@@ -1,15 +1,14 @@
 import React from 'react';
-import TopNav from '@/components/TopNav';
+import ServicePage from '@/components/landing-page/ServicePage';
 import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-    <TopNav></TopNav>
-    <div className='my-40 px-20'>
+    <ServicePage>
       <h1 className='text-5xl mb-20'>Trainings & <br /> <span className='text-orange-500'>Simulations</span></h1>
       
-      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/cad_objects.mp4" />
+      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' controls playsInline preload="metadata" src="/article-images/cad_objects.mp4" />
 
 
       <h2 className="text-3xl">Employee Training, Guided Work and VR Multiplayer Experiences </h2>
@@ -21,10 +20,10 @@ const HomePage = () => {
 
       <p>VR holds tremendous potential in enhancing workplace safety training, particularly for scenarios involving fires, earthquakes, and other emergencies. By simulating realistic environments and crisis situations, VR allows employees to experience and practice safety protocols in a controlled setting. For instance, workers can navigate through virtual buildings engulfed in flames, learning evacuation routes and fire suppression techniques without physical risk. Similarly, VR can simulate earthquake scenarios, teaching employees how to react swiftly to structural damage and assist colleagues in a crisis. These immersive simulations not only improve procedural knowledge and response times but also enhance situational awareness and decision-making under pressure. By integrating VR into safety training programs, organizations can effectively prepare their workforce to handle emergencies with confidence, ultimately reducing workplace accidents and ensuring a safer work environment overall.</p>
 
-      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/safety.mp4" />
+      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' controls playsInline preload="metadata" src="/article-images/safety.mp4" />
 
 
-    </div>
+    </ServicePage>
 
     <Contact></Contact>
   </div >;

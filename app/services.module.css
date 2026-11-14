@@ -1,0 +1,90 @@
+.section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(48px, 7vw, 110px) 0 clamp(100px, 13vw, 210px);
+  background: #18181b;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto -5% -5vw;
+  height: 10vw;
+  transform: rotate(-4deg);
+  background: #18181b;
+  border-top: 1px solid #75422e;
+  box-shadow: 0 -12px 45px #dc58151c;
+}
+.section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto -4% 3vw auto;
+  width: 55%;
+  height: clamp(30px, 4vw, 70px);
+  background: radial-gradient(ellipse, #fa68199c, transparent 68%);
+  filter: blur(9px);
+  transform: rotate(-4deg);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .section::after { animation: sheen 9s ease-in-out infinite alternate; }
+}
+@keyframes sheen {
+  to { transform: translateX(-28%) rotate(-4deg); opacity: .55; }
+}
+.grid {
+  width: min(91%, 1600px);
+  margin: clamp(32px, 5vw, 80px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.heading {
+  width: min(91%, 1600px);
+  margin: 0 auto;
+  font-size: clamp(32px, 3vw, 48px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.04em;
+}
+.heading span { color: #ff7138; }
+
+.service { padding: 0 clamp(18px, 2vw, 36px); }
+.service + .service { border-left: 1px solid #454047; }
+.service img { width: clamp(74px, 7vw, 112px); height: clamp(74px, 7vw, 112px); object-fit: contain; }
+.service h3 { margin: 22px 0 12px; font-size: clamp(21px, 1.7vw, 32px); font-weight: 700; line-height: 1.18; letter-spacing: -.025em; }
+.service h3 span { color: #ff7138; }
+.service p { color: #dedade; font-size: clamp(16px, 1.15vw, 20px); line-height: 1.55; }
+@media (max-width: 1023px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 38px; }
+  .service:nth-child(odd) { border-left: 0; }
+}
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; gap: 0; }
+  .service { padding: 24px 0; }
+  .service + .service { border-left: 0; border-top: 1px solid #454047; }
+}
+
+@media (min-width: 641px) {
+  .section {
+    background: #18181b;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .service img {
+    transition: transform 240ms ease-out;
+  }
+
+  .service:hover img {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section { padding-top: 120px; padding-bottom: 240px; }
+  .grid { margin-top: 88px; }
+  .service { padding-top: 16px; padding-bottom: 24px; }
+  .service h3 { margin-top: 32px; margin-bottom: 20px; line-height: 1.25; }
+  .service p { line-height: 1.7; }
+}

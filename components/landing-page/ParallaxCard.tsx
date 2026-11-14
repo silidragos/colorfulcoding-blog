@@ -1,103 +1,32 @@
-'use client'
+import type { ReactNode } from "react";
+import "./parallax-card.css";
 
-import { useRef, useState } from 'react';
-import useMousePosition from '../utils/UseMousePosition';
-import './parallax-card.css';
+type ProjectCardProps = {
+    title: ReactNode;
+    description: string;
+    bgImage: string;
+    url: string;
+    external: boolean;
+};
 
-const ParallaxCard = (props: { title: JSX.Element, description: string, targetId: number, bgImage: string, url: string, external: boolean }) => {
-    const mousePos = useMousePosition();
-    var cardContent = useRef<any>();
-
-    const [isHovering, setHovering] = useState(false);
-
-    const GetTX = function (): number {
-        if (!isHovering) return 0;
-        if (!cardContent.current) return 0;
-        if (!mousePos.x) return 0;
-        ;
-        const cardWidth = cardContent.current.offsetWidth;
-        const mX = mousePos.x - cardContent.current.offsetLeft - cardWidth / 2;
-        const mousePX = mX / cardWidth;
-
-        return mousePX * -40;
-    }
-
-    const GetTY = function (): number {
-        if (!isHovering) return 0;
-        if (!cardContent.current) return 0;
-        if (!mousePos.y) return 0;
-
-        const cardHeight = cardContent.current.offsetHeight;
-        const mY = mousePos.y - cardContent.current.offsetTop - cardHeight / 2;
-        const mousePY = mY / cardHeight;
-
-        return mousePY * -40;
-    }
-
-    const GetRX = function (): number {
-        if (!isHovering) return 0;
-        if (!cardContent.current) return 0;
-        if (!mousePos.x) return 0;
-
-        const cardWidth = cardContent.current.offsetWidth;
-        const mX = mousePos.x - cardContent.current.offsetLeft - cardWidth / 2;
-        const mousePX = mX / cardWidth;
-
-        return mousePX * -30;
-    }
-
-    const GetRY = function (): number {
-        if (!isHovering) return 0;
-        if (!cardContent.current) return 0;
-        if (!mousePos.y) return 0;
-
-        const cardHeight = cardContent.current.offsetHeight;
-        const mY = mousePos.y - cardContent.current.offsetTop - cardHeight / 2;
-        const mousePY = mY / cardHeight;
-
-        return mousePY * 30;
-    }
-
-    const OnMouseEnter = function (): void {
-        setHovering(true);
-    }
-
-    const OnMouseLeave = function (): void {
-        setHovering(false);
-    }
-
-    const OnMouseMove = function (): void {
-
-    }
-
-
-    function OnCardClick(evt: any): void {
-        console.log("Card clicked", props.targetId);
-    }
-
+export default function ParallaxCard(props: ProjectCardProps) {
     return (
-        <div className="parallax-card" ref={cardContent} onMouseEnter={OnMouseEnter} onMouseLeave={OnMouseLeave} onMouseMove={OnMouseMove} onClick={OnCardClick}>
-            <a href={props.url} target={props.external ? "_blank" : "_self"}>
-                <div className="parallax-card__content"
-                    style={{
-                        transform: `rotateY(${GetRX()}deg) rotateX(${GetRY()}deg)`
-                    }}
-                >
-                    <div className='card-bg' style={{
-                        backgroundImage: `url("${props.bgImage}")`,
-                        transform: `translateX(${GetTX()}px) translateY(${GetTY()}px)`
-                    }}></div>
-
-                    <div className='card-info'>
-                        <h1>{props.title}</h1>
-                        <p>{props.description}</p>
-                    </div>
-                </div>
-            </a>
-        </div >
+        <a
+            className="project-card"
+            href={props.url}
+            target={props.external ? "_blank" : undefined}
+            rel={props.external ? "noopener noreferrer" : undefined}
+        >
+            <div className="project-card__image" style={{ backgroundImage: `url("${props.bgImage}")` }} />
+            <div className="project-card__info">
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+            </div>
+            <span className="project-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" focusable="false">
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                </svg>
+            </span>
+        </a>
     );
 }
-
-
-
-export default ParallaxCard;

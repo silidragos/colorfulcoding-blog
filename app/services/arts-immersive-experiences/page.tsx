@@ -1,12 +1,11 @@
 import React from 'react';
-import TopNav from '@/components/TopNav';
+import ServicePage from '@/components/landing-page/ServicePage';
 import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-    <TopNav></TopNav>
-    <div className='my-40 px-20'>
+    <ServicePage>
       <h1 className='text-5xl mb-20'>Arts & <br /> <span className='text-orange-500'>Immersive Experiences</span></h1>
       <h2 className="text-3xl">XR Narrative Experiences and Exhibitions</h2>
 
@@ -65,7 +64,7 @@ const HomePage = () => {
       <img src="/article-images/collage-arts-3.png" className='sm:w-full md:w-1/2 m-auto' alt="XR Arts Collage" />
 
       <p>Technology serves as an indispensable companion to art and cultural festivals, enhancing storytelling and theatrical experiences through a variety of means. From augmented reality enriching interactive art installations to virtual reality immersing viewers in dynamic narratives, these technologies redefine traditional boundaries, offering new dimensions of engagement and creativity. Moreover, plain mobile apps, dashboards, and analytics provide organizers with powerful tools for managing events, analyzing attendee feedback, and enhancing operational efficiency. This integration of digital innovation with cultural heritage not only creates memorable experiences but also democratizes access to artistic expression and cultural narratives, fostering broader audience participation and appreciation.</p>
-    </div>
+    </ServicePage>
 
     <Contact></Contact>
   </div >;

@@ -35,10 +35,10 @@ const MainReel = () => {
     }, []);
 
     return (
-        <div ref={ref}>
+        <div ref={ref} className="burtiera-stage">
             <motion.div variants={{
-                hidden: { opacity: 0, y: 0, scale: 2 },
-                visible: { opacity: 1, y: 75, scale: 1 }
+                hidden: { opacity: 0, y: 0, scale: 1 },
+                visible: { opacity: 1, y: 0, scale: 1 }
             }}
                 initial="hidden"
                 animate={mainControls}
@@ -64,8 +64,8 @@ const MainReel = () => {
 
 
             <motion.div variants={{
-                hidden: { opacity: 0, y: 0, scale: 2 },
-                visible: { opacity: 1, y: 75, scale: 1 }
+                hidden: { opacity: 0, y: 0, scale: 1 },
+                visible: { opacity: 1, y: 0, scale: 1 }
             }}
                 initial="hidden"
                 animate={mainControls}

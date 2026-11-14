@@ -1,16 +1,15 @@
 import React from 'react';
-import TopNav from '@/components/TopNav';
+import ServicePage from '@/components/landing-page/ServicePage';
 import Contact from '@/components/landing-page/Contact';
 
 
 const HomePage = () => {
   return <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-    <TopNav></TopNav>
-    <div className='my-40 px-20'>
+    <ServicePage>
       <h1 className='text-5xl mb-20'>Interactive Installations & <br /> <span className='text-orange-500'>Promotional Campaigns</span></h1>
       <h2 className="text-3xl">Innovative strategies for Captivating Audiences and Showcasing Products</h2>
 
-      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/artlink-conference.mp4" />
+      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' controls playsInline preload="metadata" src="/article-images/artlink-conference.mp4" />
 
       <p className='my-10'>
         <span className='text-orange-500'>Public interactive installations, 3D hologram systems and AR/VR technologies</span> are becoming more and more popular between companies all across the industries.
@@ -44,7 +43,7 @@ const HomePage = () => {
       <h2 className="text-3xl">Commercial Advertising and Campaigns</h2>
       
       
-      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' autoPlay loop muted src="/article-images/TF.mp4" />
+      <video className='md:w-1/2 my-10 mx-auto sm:w-full border-8 border-white rounded-md' controls playsInline preload="metadata" src="/article-images/TF.mp4" />
 
       <p>
         XR provides compelling advantages in contemporary marketing strategies:
@@ -56,7 +55,7 @@ const HomePage = () => {
 
         <li><span className='text-orange-500'>In-Street AR Interactive Installations</span>: Transform urban spaces into interactive platforms where pedestrians can engage with digital overlays, games, or informative displays linked to physical locations, turning everyday walks into memorable brand experiences that reinforce consumer engagement and brand presence. These technologies redefine traditional marketing approaches by offering personalized, interactive experiences that resonate with modern consumers seeking engaging interactions with brands.</li>
       </ul>
-    </div>
+    </ServicePage>
 
     <Contact></Contact>
   </div >;

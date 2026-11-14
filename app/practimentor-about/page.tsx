@@ -1,13 +1,12 @@
 import React from 'react';
-import TopNav from '@/components/TopNav';
+import ServicePage from '@/components/landing-page/ServicePage';
 import Contact from '@/components/landing-page/Contact';
 import Image from 'next/image';
 
 const PractiMentorAboutPage = () => {
   return (
     <div className='bg-zinc-900' style={{ overflow: "hidden", maxWidth: "100%" }}>
-      <TopNav />
-      <div className='my-40 px-20'>
+      <ServicePage>
         <h1 className='text-5xl mb-20'>
           PractiMentor- Platformă modulară de training VR <br />
           <span className='text-orange-500'>asistat de AI</span>
@@ -69,7 +68,7 @@ const PractiMentorAboutPage = () => {
             </a>
           </p>
         </div>
-      </div>
+      </ServicePage>
 
       <Contact />
     </div>

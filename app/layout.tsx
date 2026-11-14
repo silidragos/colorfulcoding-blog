@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '../styles/globals.css'
 import Head from './head';
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'ColorfulCoding - XR experiences',
